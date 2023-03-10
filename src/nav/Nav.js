@@ -5,7 +5,7 @@ import "./Nav.css";
 
 const Nav = () => {
 	return (
-		<nav id='navbar'>
+		<nav id='topNav'>
 			{navLinks.map(({ navLinkId, scrollToId }, idx) => (
 				<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
 			))}

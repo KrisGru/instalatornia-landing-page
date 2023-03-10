@@ -1,13 +1,93 @@
-section {
-	padding: 50px;
+section#homeContainer,
+section#contactContainer,
+section#aboutContainer {
+	padding-top: 50px;
 	height: 100vh;
 	width: 100%;
 }
-
 section:nth-child(odd) {
 	background-color: #1e1e1e;
 }
 
-section img {
+section > img {
 	display: none;
+}
+
+#homeContainer {
+	position: relative;
+}
+
+#homeContainer > div {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#topPart {
+	position: sticky;
+	z-index: 2000;
+	background-color: #1e1e1e;
+
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-bottom: 5px solid #eeeeee;
+	box-sizing: border-box;
+}
+
+#topPart .logo {
+	display: flex;
+	justify-content: center;
+}
+
+.simpleInfo {
+	margin-top: -30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: #eeeeee;
+}
+
+.simpleInfo > .clock {
+	padding-top: 20px;
+	font-size: 1.4em;
+}
+
+#homeNav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 50px;
+}
+
+#homeNav > ul > li {
+	list-style: none;
+	color: #eeeeee;
+	font-size: 1.4em;
+}
+
+#homeNav > ul > li:hover {
+	color: #9e9696;
+}
+
+#bottomPart {
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#bottomPart:nth-child(1) {
+	width: 30%;
+}
+
+.someInfo {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+	color: #eeeeee;
 }

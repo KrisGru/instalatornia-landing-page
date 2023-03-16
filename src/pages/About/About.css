@@ -1,0 +1,38 @@
+#aboutContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about-frame {
+	border: 3px solid #1e1e1e;
+	padding: 30px;
+	/* +40 za obramówke tego obok */
+	width: 440px;
+	font-size: 18px;
+}
+
+.about-frame p {
+	text-indent: 20px;
+	word-spacing: 1px;
+}
+
+.salon-photo {
+	position: relative;
+	padding-bottom: 5%;
+}
+
+.about_out_frame {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	border: 3px solid #1e1e1e;
+	z-index: 2;
+	top: 40px;
+	left: 40px;
+}
+
+.aboutUs {
+	letter-spacing: 0.5px;
+}

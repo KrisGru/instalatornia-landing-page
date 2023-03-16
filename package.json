@@ -1,6 +1,5 @@
 {
-	"homepage": "https://shapirodaniel.github.io/single-page-nav",
-	"name": "single-page-nav",
+	"name": "studio-fryzur",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -9,7 +8,9 @@
 		"@testing-library/user-event": "^12.1.10",
 		"gh-pages": "^3.1.0",
 		"react": "^17.0.2",
+		"react-animated-slider": "^2.0.0",
 		"react-dom": "^17.0.2",
+		"react-router-dom": "^6.9.0",
 		"react-scripts": "^5.0.1",
 		"web-vitals": "^1.0.1"
 	},

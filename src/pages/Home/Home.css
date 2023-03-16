@@ -1,0 +1,118 @@
+#homeContainer {
+	position: relative;
+}
+
+#homeContainer > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#topPart {
+	height: 40%;
+	position: sticky;
+	z-index: 2;
+	background-color: #0b0b0b;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-bottom: 3px solid #eeeeee;
+	box-sizing: border-box;
+}
+
+#topPart .logo {
+	display: flex;
+	justify-content: center;
+}
+
+.simpleInfo {
+	margin-top: -30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: #eeeeee;
+}
+
+.simpleInfo > .clock {
+	padding-top: 20px;
+	font-size: 1.4em;
+}
+
+/* #homeNav:nth-child(1) {
+	display: none !important;
+} */
+
+#homeNav > span[id="Strona Główna"] {
+	display: none;
+}
+
+#homeNav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: white;
+	padding-bottom: 20px;
+	align-items: center;
+	width: 100%; /* Full width */
+}
+
+#homeNav > span {
+	list-style: none;
+	font-size: 1.4em;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s ease;
+	transition-delay: 0.25s;
+	margin: 1em;
+	padding-bottom: 0.3em;
+}
+
+#homeNav > span:hover {
+	cursor: pointer;
+	border-bottom: 2px solid white;
+}
+
+#bottomPart {
+	height: 60%;
+	/* display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: self-end; */
+	/* padding: 0 50px; */
+}
+
+#bottomPart .someInfo {
+	width: 30%;
+	/* height: 100%; */
+	display: flex;
+	align-content: space-between;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+	color: #eeeeee;
+}
+
+#bottomPart .viewInfo {
+	/* width: -webkit-fill-available; */
+	height: 100%;
+	/* width: 70%; */
+
+	/* justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+	color: #eeeeee; */
+}
+
+#bottomPart .slider {
+	width: 100%;
+	height: 100%;
+}
+
+#bottomPart .track {
+	width: 100%;
+	height: 100%;
+	/* height: 100%;
+	width: 100%;
+	position: unset;
+	display: flex !important; */
+}

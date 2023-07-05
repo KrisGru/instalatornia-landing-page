@@ -1,3 +1,69 @@
+section#homeContainer,
+section#aboutContainer,
+section#offerContainer,
+section#galleryContainer,
+section#contactContainer {
+	height: 100vh;
+	width: 100%;
+	scroll-margin: 40px;
+}
+
+section:nth-child(odd) {
+	background-color: #0b0b0b;
+}
+
+section > img {
+	display: none;
+}
+
+section#aboutContainer,
+section#offerContainer,
+section#galleryContainer,
+section#contactContainer {
+	display: flex;
+}
+
+/* About style */
+#aboutContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about-frame {
+	border: 3px solid #1e1e1e;
+	padding: 30px;
+	/* +40 za obramówke tego obok */
+	width: 440px;
+	font-size: 18px;
+}
+
+.about-frame p {
+	text-indent: 20px;
+	word-spacing: 1px;
+}
+
+.salon-photo {
+	position: relative;
+	padding-bottom: 5%;
+}
+
+.about_out_frame {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	border: 3px solid #1e1e1e;
+	z-index: 2;
+	top: 40px;
+	left: 40px;
+}
+
+.aboutUs {
+	letter-spacing: 0.5px;
+}
+
+/* Home styles */
 #homeContainer {
 	position: relative;
 }
@@ -26,7 +92,7 @@
 }
 
 .simpleInfo {
-	margin-top: -30px;
+	padding-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -38,10 +104,6 @@
 	padding-top: 20px;
 	font-size: 1.4em;
 }
-
-/* #homeNav:nth-child(1) {
-	display: none !important;
-} */
 
 #homeNav > span[id="Strona Główna"] {
 	display: none;
@@ -74,16 +136,10 @@
 
 #bottomPart {
 	height: 60%;
-	/* display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: self-end; */
-	/* padding: 0 50px; */
 }
 
 #bottomPart .someInfo {
 	width: 30%;
-	/* height: 100%; */
 	display: flex;
 	align-content: space-between;
 	justify-content: center;
@@ -93,14 +149,7 @@
 }
 
 #bottomPart .viewInfo {
-	/* width: -webkit-fill-available; */
 	height: 100%;
-	/* width: 70%; */
-
-	/* justify-content: center;
-	align-items: center;
-	font-size: 1.4em;
-	color: #eeeeee; */
 }
 
 #bottomPart .slider {
@@ -111,8 +160,4 @@
 #bottomPart .track {
 	width: 100%;
 	height: 100%;
-	/* height: 100%;
-	width: 100%;
-	position: unset;
-	display: flex !important; */
 }

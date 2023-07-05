@@ -1,17 +1,17 @@
 import React from "react";
-import { useNav } from "../../route/customHooks/useNav";
+import { useNav } from "../route/customHooks/useNav";
 import "./Page.css";
 
-const Offer = () => {
+const Gallery = () => {
   // useNav takes in a navLinkId and returns a ref
   // this ref is used to register the navLinkId that's
   // currently in view, and apply activeClass styling
   // to the corresponding nav childElement
 
-  const aboutRef = useNav("Offer");
+  const aboutRef = useNav("Gallery");
 
   return (
-    <section ref={aboutRef} id="offerContainer">
+    <section ref={aboutRef} id="galleryContainer">
       <img
         src="https://source.unsplash.com/random/600x600/?nature,water"
         alt="unsplash-img"
@@ -24,4 +24,4 @@ const Offer = () => {
   );
 };
 
-export default Offer;
+export default Gallery;

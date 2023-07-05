@@ -1,8 +1,7 @@
-import { Home, About, Contact, Offer, Gallery } from "./components/pages/index";
-// import NavProvider from "./route/navigationContext";
+import { Home, About, Contact, Offer, Gallery } from "./pages";
 import { NavigationContextProvider } from "./route/navigationContext";
 import { navLinks } from "./assets/data/consts";
-import NavLink from "./components/NavLink";
+import CustomNavLink from "./components/CustomNavLink";
 
 function App() {
   return (
@@ -10,7 +9,11 @@ function App() {
       <div className="appContainer">
         <nav id="topNav">
           {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-            <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+            <CustomNavLink
+              key={idx}
+              navLinkId={navLinkId}
+              scrollToId={scrollToId}
+            />
           ))}
         </nav>
         <Home />

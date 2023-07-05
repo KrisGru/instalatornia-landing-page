@@ -1,5 +1,5 @@
 import React from "react";
-import { useNav } from "../../route/customHooks/useNav";
+import { useNav } from "../route/customHooks/useNav";
 import "./Page.css";
 
 const About = () => {

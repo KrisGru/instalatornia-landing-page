@@ -1,37 +1,31 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"); */
-
 :root {
-	--dark: #0b0b0b;
-	--light: #eeeeee;
+    --primary-font: 'Oswald', sans-serif;
+    --primary-color: #333;
+    --hover-nav-color: #005521;
+    --grey-color: #cccccc;
+    --secondary-font: system-ui;
+    --test-var: green;
+    --facebook-color: #1877F2;
+    --youtube-color:#d60000;
 }
 
 * {
 	box-sizing: border-box;
 	/* max-width: 100%; */
-	font-family: "Courier New", Courier, monospace;
 }
 
-*,
-html {
+*, html {
 	line-height: 1em;
 	padding: 0;
 	margin: 0;
-	font-family: "Libre Franklin", sans-serif;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+	font-family: var(--primary-font, --secondary-font);
+	/* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
 }
 
 /* TopNav styles */

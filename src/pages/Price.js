@@ -5,10 +5,10 @@ import { ReactComponent as FacebookIcon } from "../assets/icons/facebook.svg";
 import TableRow from "../components/TableRow";
 import "./Page.css";
 
-const About = () => {
-  const aboutRef = useNav("price");
+const Price = () => {
+  const priceRef = useNav("price");
   return (
-    <section ref={aboutRef} id="priceContainer">
+    <section ref={priceRef} id="priceContainer">
       <div>
         <div className="priceHeader">
           <FacebookIcon />
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Price;

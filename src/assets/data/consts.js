@@ -1,8 +1,8 @@
 export const navLinks = [
   { id: 1, title: "Strona Główna", scrollToId: "homeContainer" },
-  { id: 2, title: "Wycena", scrollToId: "rateContainer" },
-  { id: 3, title: "Galeria", scrollToId: "galleryContainer" },
-  { id: 4, title: "O nas", scrollToId: "aboutUsContainer" },
+  { id: 2, title: "Wycena", scrollToId: "priceContainer" },
+  { id: 3, title: "Realizacje", scrollToId: "realizationsContainer" },
+  { id: 4, title: "O firmie", scrollToId: "aboutUsContainer" },
   { id: 5, title: "Kontakt", scrollToId: "contactContainer" },
 ];
 
@@ -29,5 +29,138 @@ export const services = [
   {
     name: "Demontaż starych opraw oświetleniowych: halogeny, kinkiety, żyrandole, itp.",
     price: "18 – 35 zł/szt",
+  },
+];
+
+export const carouselGallery = [
+  {
+    title: "Vulputate Mollis Ultricies",
+    description:
+      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
+    button: "Read More",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+    user: "Daniel",
+    userProfile: "https://s7.postimg.cc/abavelo3v/1_3x.png",
+  },
+  {
+    title: "Tortor Dapibus",
+    description:
+      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+    button: "Discover",
+    image: "https://i.imgur.com/DCdBXcq.jpg",
+    user: "Samantha",
+    userProfile: "https://s7.postimg.cc/ujy8zz7vv/5_3x.png",
+  },
+  {
+    title: "Phasellus volutpat metus",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+    button: "Buy now",
+    image: "https://i.imgur.com/DvmN8Hx.jpg",
+    user: "Michael",
+    userProfile: "https://s7.postimg.cc/6exjimijv/3_3x.png",
+  },
+  {
+    title: "Ultricies Vulputate Mollis",
+    description:
+      "Aenean eu leo quam. Pellentesque ornare sem lacinia  nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
+    button: "Read More",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+    user: "Jessica",
+    userProfile: "https://s7.postimg.cc/7ihnu80ij/4_3x.png",
+  },
+  {
+    title: "Odo Aenean Quam Tortor",
+    description:
+      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    button: "Discover",
+    image: "https://i.imgur.com/DCdBXcq.jpg",
+    user: "William",
+    userProfile: "https://s7.postimg.cc/f9ydt4zmj/2_3x.png",
+  },
+  {
+    title: "Volutpat Aenean metus",
+    description:
+      "quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumconsectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis.",
+    button: "Buy now",
+    image: "https://i.imgur.com/DvmN8Hx.jpg",
+    user: "Katerina",
+    userProfile: "https://s7.postimg.cc/hsk2th5tn/6_3x.png",
+  },
+];
+
+export const realizationCategories = [
+  {
+    id: 1,
+    title: "Rozdzielnie",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+  },
+  {
+    id: 2,
+    title: "Uziemnienie",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://s7.postimg.cc/abavelo3v/1_3x.png",
+  },
+  {
+    id: 3,
+    title: "Klatka schodowa",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+  },
+  {
+    id: 4,
+    title: "Nasza ekipa",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://s7.postimg.cc/hsk2th5tn/6_3x.png",
+  },
+  {
+    id: 5,
+    title: "Busik",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+  },
+  {
+    id: 6,
+    title: "Programy w jakich działamy",
+    description:
+      "Rozdzielnice elektryczne są centralnym elementem instalacji elektrycznej budynku, zlokalizowanym zwykle w pobliżu złącza. Rozdzielnice elektryczne montuje się w obiektach wielorodzinnych lub większych jednorodzinnych w sytuacji, gdy z jednego złącza zasila się więcej niż jedną wewnętrzną linię zasilającą.",
+    image: "https://s7.postimg.cc/abavelo3v/1_3x.png",
+  },
+];
+
+export const aboutCompany = [
+  {
+    id: 1,
+    imgSrc: "../assets/idea.png",
+    description: "Do każdego zlecenia podchodzimy indywidualnie",
+  },
+  {
+    id: 2,
+    imgSrc: "../assets/idea.png",
+    description:
+      "Śledząc bieżące trendy doradzamy klientom tak, aby instalacja w ich mieszkaniu, domu lub firmie była komfortowa w użytkowaniu i co najważniejsze, była trwała",
+  },
+  {
+    id: 3,
+    imgSrc: "../assets/idea.png",
+    description:
+      "Do realizacji zadań wybieramy materiały i narzędzia wiodących marek, co daje gwarancję szybkiej i rzetelnej realizacji powierzonych prac",
+  },
+  {
+    id: 4,
+    imgSrc: "../assets/idea.png",
+    description: "Na każde zlecenie udzielamy gwarancji",
+  },
+  {
+    id: 5,
+    imgSrc: "../assets/idea.png",
+    description:
+      "Na bieżąco śledzimy przepisy i normy po to, aby nasza praca była wykonana zgodnie z ogólnymi zasadami bezpieczeństwa",
   },
 ];

@@ -7,6 +7,7 @@ import { ReactComponent as YoutubeIcon } from "../assets/icons/youtube.svg";
 import { ReactComponent as PinIcon } from "../assets/icons/pin.svg";
 import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone.svg";
+// import CarouselModal from "../components/CarouselModal";
 import logo from "../assets/instalatornia.jpg";
 
 import "./Page.css";
@@ -86,6 +87,7 @@ const Home = () => {
           <button className="home-button">Zobacz</button>
         </div>
       </div>
+      {/* <CarouselModal /> */}
     </section>
   );
 };

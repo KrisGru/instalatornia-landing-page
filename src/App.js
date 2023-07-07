@@ -1,4 +1,4 @@
-import { Home, About, Contact, Offer, Gallery } from "./pages";
+import { Home, Price, Realizations, About, Contact } from "./pages";
 import { NavigationContextProvider } from "./route/navigationContext";
 import { navLinks } from "./assets/data/consts";
 import CustomNavLink from "./components/CustomNavLink";
@@ -8,17 +8,18 @@ function App() {
     <NavigationContextProvider>
       <div className="appContainer">
         <nav id="hideNav">
-          {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+          {navLinks.map(({ title, scrollToId }, idx) => (
             <CustomNavLink
               key={idx}
-              navLinkId={navLinkId}
+              navLinkId={title}
               scrollToId={scrollToId}
+              destination={true}
             />
           ))}
         </nav>
         <Home />
-        <Offer />
-        <Gallery />
+        <Price />
+        <Realizations />
         <About />
         <Contact />
       </div>

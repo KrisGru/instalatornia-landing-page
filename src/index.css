@@ -11,7 +11,6 @@
 
 * {
 	box-sizing: border-box;
-	/* max-width: 100%; */
 }
 
 *, html {
@@ -24,18 +23,16 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: var(--primary-font, --secondary-font);
-	/* -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; */
 }
 
-/* TopNav styles */
-nav#topNav {
+/* hide navigation style */
+#hideNav {
 	z-index: 10;
 	color: white;
 	background-color: #0b0b0b;
 	max-height: 60px;
 	position: fixed; /* Make it stick/fixed */
-	top: -50px; /* Hide the navbar 50 px outside of the top view */
+	top: -50px;  /* Hide the navbar 50 px outside of the top view */
 	max-height: 50px;
 	display: flex;
 	justify-content: space-around;
@@ -43,22 +40,4 @@ nav#topNav {
 	/* align-items: center; */
 	width: 100%; /* Full width */
 	transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-nav#topNav span {
-	font-size: 16px;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.2s ease;
-	transition-delay: 0.25s;
-	margin: 10px;
-	padding-bottom: 0.3em;
-}
-
-nav#topNav span:hover {
-	cursor: pointer;
-	border-bottom: 1px solid white;
-}
-
-nav span.activeClass {
-	border-bottom-color: var(--lightAccent);
 }

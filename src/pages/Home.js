@@ -16,61 +16,57 @@ const Home = () => {
 
   return (
     <section ref={homeRef} id="homeContainer">
-      <div className="navBar">
-        <div className="mainInformation">
-          <div className="mainInformation-entries">
-            <div className="mainInformation-row">
-              <div className="mainInformation-data-list">
-                <ul className="mainInformation-items">
-                  <li className="mainInformation-item">
-                    <PinIcon className="mainInformation-icon pin" /> Kielce + 50
-                    km
-                  </li>
-                  <li className="mainInformation-item">
-                    <UserIcon className="mainInformation-icon user" /> Arkadiusz
-                  </li>
-                  <li className="mainInformation-item">
-                    <PhoneIcon className="mainInformation-icon phone" /> 235 572
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <img src={logo} alt="Logo" />
-                {/* <p>
-                            usługi elektryczne | instalacje domowe | duże
-                            zlecenia
-                        </p> */}
-              </div>
-              <div className="mainInformation-icons">
-                <FacebookIcon
-                  className="social-media-icon facebook"
-                  onClick={() =>
-                    window.open(
-                      "https://www.facebook.com/profile.php?id=100085298913640",
-                      "_blank"
-                    )
-                  }
-                />
-                <InstagramIcon
-                  className="social-media-icon instagram"
-                  onClick={() =>
-                    window.open("https://www.instagram.com/", "_blank")
-                  }
-                />
-                <YoutubeIcon
-                  className="social-media-icon youtube"
-                  onClick={() =>
-                    window.open("https://www.youtube.com/", "_blank")
-                  }
-                />
-              </div>
-            </div>
-            <div className="mainInformation-specialization"></div>
+      <div id="webHeader">
+        <header>
+          <ul className="information-list">
+            <li>
+              <PinIcon className="information-item pin" /> Kielce + 50 km
+            </li>
+            <li>
+              <UserIcon className="information-item user" /> Arkadiusz
+            </li>
+            <li>
+              <PhoneIcon className="information-item phone" /> 235 572
+            </li>
+          </ul>
+
+          <div>
+            <img src={logo} alt="Logo" />
           </div>
-        </div>
+
+          <ul className="socialMedia-list">
+            <li>
+              <FacebookIcon
+                className="socialMedia-item facebook"
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/profile.php?id=100085298913640",
+                    "_blank"
+                  )
+                }
+              />
+            </li>
+            <li>
+              <InstagramIcon
+                className="socialMedia-item instagram"
+                onClick={() =>
+                  window.open("https://www.instagram.com/", "_blank")
+                }
+              />
+            </li>
+            <li>
+              <YoutubeIcon
+                className="socialMedia-item youtube"
+                onClick={() =>
+                  window.open("https://www.youtube.com/", "_blank")
+                }
+              />
+            </li>
+          </ul>
+        </header>
 
         <nav className="navbar">
-          <ul className="navbar-nav">
+          <ul>
             {navLinks.map(({ title, scrollToId }, idx) => (
               <CustomNavLink
                 key={idx}
@@ -80,6 +76,15 @@ const Home = () => {
             ))}
           </ul>
         </nav>
+      </div>
+      <div className="homeContain">
+        <div>
+          <h1>Postaw na specjalistów i sprawdzone rozwiązania</h1>
+          <p>
+            Rozwiążemy każdy problem. Zapraszamy do zapoznania się z ofertą.
+          </p>
+          <button className="home-button">Zobacz</button>
+        </div>
       </div>
     </section>
   );

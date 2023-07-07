@@ -1,27 +1,28 @@
 import React from "react";
 import { useNav } from "../route/customHooks/useNav";
+import { services } from "../assets/data/consts";
+import { ReactComponent as FacebookIcon } from "../assets/icons/facebook.svg";
+import TableRow from "../components/TableRow";
 import "./Page.css";
 
-const Offer = () => {
-  // useNav takes in a navLinkId and returns a ref
-  // this ref is used to register the navLinkId that's
-  // currently in view, and apply activeClass styling
-  // to the corresponding nav childElement
-
-  const aboutRef = useNav("Offer");
-
+const About = () => {
+  const aboutRef = useNav("price");
   return (
-    <section ref={aboutRef} id="offerContainer">
-      <img
-        src="https://source.unsplash.com/random/600x600/?nature,water"
-        alt="unsplash-img"
-      />
+    <section ref={aboutRef} id="priceContainer">
       <div>
-        <h3>ABOUT</h3>
-        <p>This is the about section</p>
+        <div className="priceHeader">
+          <FacebookIcon />
+          <h1>USŁUGI ELEKTRYCZNE</h1>
+        </div>
+        <ul className="service-list">
+          <TableRow name="Usługa" price="Cena" />
+          {services.map((service, index) => (
+            <TableRow key={index} name={service.name} price={service.price} />
+          ))}
+        </ul>
       </div>
     </section>
   );
 };
 
-export default Offer;
+export default About;

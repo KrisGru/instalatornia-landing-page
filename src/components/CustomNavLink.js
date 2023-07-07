@@ -14,10 +14,8 @@ const CustomNavLink = ({ navLinkId, scrollToId }) => {
   };
 
   return (
-    <li onClick={handleClick}>
-      <a
-        className={activeSection === navLinkId ? "nav-item active" : "nav-item"}
-      >
+    <li className="customNavLink" onClick={handleClick}>
+      <a className={activeSection === navLinkId ? "active" : ""}>
         {scrollToId === "homeContainer" && <HomeIcon />}
         {scrollToId === "rateContainer" && <RateIcon />}
         {scrollToId === "galleryContainer" && <GalleryIcon />}

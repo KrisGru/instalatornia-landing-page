@@ -7,7 +7,7 @@ function App() {
   return (
     <NavigationContextProvider>
       <div className="appContainer">
-        <nav id="topNav">
+        <nav id="hideNav">
           {navLinks.map(({ navLinkId, scrollToId }, idx) => (
             <CustomNavLink
               key={idx}
@@ -17,9 +17,9 @@ function App() {
           ))}
         </nav>
         <Home />
-        <About />
         <Offer />
         <Gallery />
+        <About />
         <Contact />
       </div>
     </NavigationContextProvider>

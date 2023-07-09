@@ -1,19 +1,17 @@
 import React from "react";
 import { useNav } from "../route/customHooks/useNav";
 import { services } from "../assets/data/consts";
-import { ReactComponent as FacebookIcon } from "../assets/icons/facebook.svg";
+import logo from "../assets/logo-test-2.png";
 import TableRow from "../components/TableRow";
+import Header from "../components/Header";
 import "./Page.css";
 
 const Price = () => {
-  const priceRef = useNav("price");
+  const priceRef = useNav("priceContainer");
   return (
     <section ref={priceRef} id="priceContainer">
       <div>
-        <div className="priceHeader">
-          <FacebookIcon />
-          <h1>USŁUGI ELEKTRYCZNE</h1>
-        </div>
+        <Header logo={logo} text="USŁUGI ELEKTRYCZNE" />
         <ul className="service-list">
           <TableRow name="Usługa" price="Cena" />
           {services.map((service, index) => (

@@ -5,35 +5,31 @@ import { ReactComponent as FacebookIcon } from "../assets/icons/facebook.svg";
 import { ReactComponent as InstagramIcon } from "../assets/icons/instagram.svg";
 import { ReactComponent as YoutubeIcon } from "../assets/icons/youtube.svg";
 import { ReactComponent as PinIcon } from "../assets/icons/pin.svg";
-import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone.svg";
-// import CarouselModal from "../components/CarouselModal";
-import logo from "../assets/instalatornia.jpg";
+import CarouselModal from "../components/CarouselModal";
+import logo from "../assets/logo-test-2.png";
+// import logo from "../assets/aaaaaaaaaaaaa.png";
 
 import "./Page.css";
 
 const Home = () => {
-  const homeRef = useNav("Home");
+  const homeRef = useNav("homeContainer");
 
   return (
     <section ref={homeRef} id="homeContainer">
-      <div id="webHeader">
-        <header>
+      <div>
+        <header id="webHeader">
           <ul className="information-list">
             <li>
               <PinIcon className="information-item pin" /> Kielce + 50 km
             </li>
             <li>
-              <UserIcon className="information-item user" /> Arkadiusz
-            </li>
-            <li>
-              <PhoneIcon className="information-item phone" /> 235 572
+              <PhoneIcon className="information-item phone" /> 235 572 352 -
+              Arek
             </li>
           </ul>
 
-          <div>
-            <img src={logo} alt="Logo" />
-          </div>
+          <img src={logo} alt="Logo" />
 
           <ul className="socialMedia-list">
             <li>
@@ -79,15 +75,15 @@ const Home = () => {
         </nav>
       </div>
       <div className="homeContain">
-        <div>
+        <CarouselModal />
+        {/* <div>
           <h1>Postaw na specjalistów i sprawdzone rozwiązania</h1>
           <p>
             Rozwiążemy każdy problem. Zapraszamy do zapoznania się z ofertą.
           </p>
           <button className="home-button">Zobacz</button>
-        </div>
+        </div> */}
       </div>
-      {/* <CarouselModal /> */}
     </section>
   );
 };

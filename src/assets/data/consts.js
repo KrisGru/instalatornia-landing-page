@@ -34,59 +34,59 @@ export const services = [
 
 export const carouselGallery = [
   {
-    title: "Vulputate Mollis Ultricies",
+    title: "Postaw na specjalistów",
     description:
-      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
-    button: "Read More",
-    image: "https://i.imgur.com/ZXBtVw7.jpg",
-    user: "Daniel",
+      "Rozwiążemy każdy problem. Zapraszamy do zapoznania się z ofertą.",
+    button: "Zobacz",
+    image: "./img/header-1.jpg",
+    user: "Arkadiusz",
     userProfile: "https://s7.postimg.cc/abavelo3v/1_3x.png",
   },
   {
-    title: "Tortor Dapibus",
+    title: "Chcesz zobaczyć jak pracujemy?",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-    button: "Discover",
-    image: "https://i.imgur.com/DCdBXcq.jpg",
-    user: "Samantha",
+      "Zerknij do realizacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. ",
+    button: "Sprawdź nas",
+    image: "./img/header-2.jpg",
+    user: "Spejson",
     userProfile: "https://s7.postimg.cc/ujy8zz7vv/5_3x.png",
   },
   {
-    title: "Phasellus volutpat metus",
+    title: "Zastanawiasz się ile będzie kosztować Cię remont?",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
-    button: "Buy now",
-    image: "https://i.imgur.com/DvmN8Hx.jpg",
+      "Skontaktuj się z nami! Sprawdź nasz cennik. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+    button: "Wycena",
+    image: "./img/header-4.jpg",
     user: "Michael",
     userProfile: "https://s7.postimg.cc/6exjimijv/3_3x.png",
   },
   {
-    title: "Ultricies Vulputate Mollis",
+    title: "Ciekawostki i galeria z naszej pracy",
     description:
       "Aenean eu leo quam. Pellentesque ornare sem lacinia  nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-    button: "Read More",
-    image: "https://i.imgur.com/ZXBtVw7.jpg",
+    button: "REALIZACJE",
+    image: "./img/header-5.jpg",
     user: "Jessica",
     userProfile: "https://s7.postimg.cc/7ihnu80ij/4_3x.png",
   },
-  {
-    title: "Odo Aenean Quam Tortor",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    button: "Discover",
-    image: "https://i.imgur.com/DCdBXcq.jpg",
-    user: "William",
-    userProfile: "https://s7.postimg.cc/f9ydt4zmj/2_3x.png",
-  },
-  {
-    title: "Volutpat Aenean metus",
-    description:
-      "quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumconsectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis.",
-    button: "Buy now",
-    image: "https://i.imgur.com/DvmN8Hx.jpg",
-    user: "Katerina",
-    userProfile: "https://s7.postimg.cc/hsk2th5tn/6_3x.png",
-  },
+  // {
+  //   title: "Odo Aenean Quam Tortor",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   button: "Discover",
+  //   image: "https://i.imgur.com/DCdBXcq.jpg",
+  //   user: "William",
+  //   userProfile: "https://s7.postimg.cc/f9ydt4zmj/2_3x.png",
+  // },
+  // {
+  //   title: "Volutpat Aenean metus",
+  //   description:
+  //     "quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumconsectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis.",
+  //   button: "Buy now",
+  //   image: "https://i.imgur.com/DvmN8Hx.jpg",
+  //   user: "Katerina",
+  //   userProfile: "https://s7.postimg.cc/hsk2th5tn/6_3x.png",
+  // },
 ];
 
 export const realizationCategories = [

@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as FacebookIcon } from "../assets/icons/youtube.svg";
 import { useNav } from "../route/customHooks/useNav";
+// import Header from "../components/Header";
 // import GalleryBox from "../components/GalleryBox";
 import "./Page.css";
 
@@ -15,11 +16,11 @@ const Realizations = () => {
         <FacebookIcon />
         <h1>NASZE REALIZACJE</h1>
       </div>
+      {/* <Header logo={FacebookIcon} text="NASZE REALIZACJE" /> */}
       <div className="category-list">
         {realizationCategories.map((category) => (
           <div key={category.id}>
             <div className="categorySquare">
-              {/* <img src={category.image} alt="gdjasfb"></img> */}
               <h1 className="categoryTitle">{category.title}</h1>
             </div>
           </div>

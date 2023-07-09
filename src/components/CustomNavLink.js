@@ -20,8 +20,8 @@ const CustomNavLink = ({ navLinkId, scrollToId, hideNav }) => {
     >
       <a className={activeSection === navLinkId ? "active" : ""}>
         {scrollToId === "homeContainer" && <HomeIcon />}
-        {scrollToId === "rateContainer" && <RateIcon />}
-        {scrollToId === "galleryContainer" && <GalleryIcon />}
+        {scrollToId === "priceContainer" && <RateIcon />}
+        {scrollToId === "realizationsContainer" && <GalleryIcon />}
         {navLinkId}
       </a>
     </li>

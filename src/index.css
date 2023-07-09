@@ -1,19 +1,28 @@
 :root {
-    --primary-font: 'Oswald', sans-serif;
-    --primary-color: #333;
-    --hover-nav-color: #005521;
-    --grey-color: #cccccc;
-    --secondary-font: system-ui;
-    --test-var: green;
-    --facebook-color: #1877F2;
-    --youtube-color:#d60000;
+	/* colors */
+	--main-green: #0D7037;
+	--light-green: #34ff00b3;
+	--grey:#333;
+	--facebook-color: #1877F2;
+	--youtube-color: #d60000;
+	/* font's */
+	--primary-font: 'Oswald', sans-serif;
+	--secondary-font: system-ui;
+	--primary-color: #333;
+	--hover-nav-color: #005521;
+	--grey-color: #cccccc;
+	--test-var: green;
+	/* margins */
+	--margin-sides: 50px;
+
 }
 
 * {
 	box-sizing: border-box;
 }
 
-*, html {
+*,
+html {
 	line-height: 1em;
 	padding: 0;
 	margin: 0;
@@ -26,20 +35,32 @@ body {
 }
 
 /* hide navigation style */
+section#homeContainer,
+section#aboutContainer,
+section#offerContainer,
+section#galleryContainer,
+section#contactContainer {
+	scroll-margin: 40px;
+}
+
 #hideNav {
 	z-index: 10;
 	color: white;
 	background-color: #0b0b0b;
 	max-height: 60px;
-	position: fixed; /* Make it stick/fixed */
-	top: -50px;  /* Hide the navbar 50 px outside of the top view */
+	position: fixed;
+	/* Make it stick/fixed */
+	top: -50px;
+	/* Hide the navbar 50 px outside of the top view */
 	max-height: 50px;
 	display: flex;
 	justify-content: space-around;
 	padding: 0 250px;
 	/* align-items: center; */
-	width: 100%; /* Full width */
-	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	width: 100%;
+	/* Full width */
+	transition: top 0.3s;
+	/* Transition effect when sliding down (and up) */
 }
 
 #hideNav .customNavLink {
@@ -49,5 +70,4 @@ body {
 
 #hideNav .customNavLink svg {
 	display: none;
-
 }

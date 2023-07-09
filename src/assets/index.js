@@ -82,7 +82,7 @@ class Slider extends React.PureComponent {
       this.stopAutoplay();
       this.autoplayTimerId = setInterval(
         this.next,
-        parseInt(this.props.autoplay, 10)
+        parseInt(this.props.autoplay, 2)
       );
     }
   };
@@ -335,7 +335,7 @@ class Slider extends React.PureComponent {
         <a
           onClick={this.previous}
           className={`${classNames.previousButton}${
-            isDisabled || !this.canGoPrevious()
+            isDisabled || this.canGoPrevious()
               ? ` ${classNames.buttonDisabled}`
               : ""
           }`}

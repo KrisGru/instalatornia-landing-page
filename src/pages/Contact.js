@@ -1,7 +1,7 @@
 import React from "react";
 import { useNav } from "../route/customHooks/useNav";
 import { ReactComponent as FacebookIcon } from "../assets/icons/pin.svg";
-import CarouselModal from "../components/CarouselModal";
+// import CarouselModal from "../components/CarouselModal";
 import "./Page.css";
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
         <FacebookIcon />
         <h1>KONTAKT</h1>
       </div>
-      <CarouselModal />
+      {/* <CarouselModal /> */}
     </section>
   );
 };

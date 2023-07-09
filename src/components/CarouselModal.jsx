@@ -9,29 +9,30 @@ import { carouselGallery as content } from "../assets/data/consts";
 function Custom() {
   return (
     <div className="carouselModal" style={{ width: "100%" }}>
-      {/* <h2>Custom style and animations</h2> */}
       <Slider>
-        {content.map((item, index) => (
-          <div
-            key={index}
-            className="sliderContent"
-            style={{
-              background: `url('${item.image}') no-repeat center center`,
-            }}
-          >
-            <div className="inner">
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
-              <button>{item.button}</button>
+        {content.map((item, index) => {
+          const imageStyles = {
+            backgroundImage: `url(${item.image})`,
+            backgroundPosition: "top",
+          };
+          return (
+            <div key={index} className="sliderContent" style={imageStyles}>
+              <div className="inner">
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                <button onClick={() => alert("przekierowanie do")}>
+                  {item.button}
+                </button>
+              </div>
+              <section>
+                <img src={item.userProfile} alt={item.user} />
+                <span>
+                  Posted by <strong>{item.user}</strong>
+                </span>
+              </section>
             </div>
-            <section>
-              <img src={item.userProfile} alt={item.user} />
-              <span>
-                Posted by <strong>{item.user}</strong>
-              </span>
-            </section>
-          </div>
-        ))}
+          );
+        })}
       </Slider>
     </div>
   );

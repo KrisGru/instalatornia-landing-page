@@ -1,129 +1,130 @@
-section#homeContainer, section#aboutContainer, section#offerContainer, section#galleryContainer, section#contactContainer {
-	scroll-margin: 40px;
-}
-
-/* section:nth-child(odd) {
-	background-color: #0b0b0b;
-} */
-
-section > img {
-	display: none;
-}
-/* Home styles */
+/* homeContainer styles */
 #webHeader {
-	/* border-bottom: 3px solid var(--grey-color, #cccccc); */
+	display: flex;
+	justify-content: space-between;
+	padding: 10px var(--margin-sides);
+
+	& ul {
+		width: 500px;
+	}
 }
 
-#webHeader header {
-	display:flex;
-	justify-content: space-between;
-	padding: 0 50px;
-	background-image: url('../assets/MacBook\ Pro\ 16_\ -\ 2.png');
-  }
-  
-  .information-item  {
-	padding-right: 5px;
-  }
-  
-  .information-item.pin {
-	fill: #00702b;
-  }
-  
-  .information-item.phone {
-	fill: var(--youtube-color);
-  }
-
-  .information-list {
-	padding-top: 50px;
+.information-list {
 	font-size: 1.4em;
-	width: 250px;
 	list-style-type: none;
 	margin: 0px;
-  }
-  
+	display: flex;
+
+	& li {
+		margin-right: 50px;
+
+		.information-item {
+			padding-right: 5px;
+		}
+
+		.information-item.pin {
+			fill: var(--main-green);
+		}
+
+		.information-item.phone {
+			fill: var(--youtube-color);
+		}
+	}
+}
+
 .socialMedia-list {
 	display: inline-flex;
+	justify-content: flex-end;
 	list-style: none;
-	margin-top: 10px;
-	width: 250px;
-  }
-  .socialMedia-item {
-	margin-left: 15px;
-  }
-  
-  .socialMedia-item:hover {
-	cursor: pointer;
-  }
-  
-  .socialMedia-item.facebook {
-	fill: var(--facebook-color);
-  }
 
-  .socialMedia-item.instagram {
-	fill: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  }
+	.socialMedia-item {
+		margin-left: 15px;
+	}
 
-  .socialMedia-item.youtube {
-	fill: var(--youtube-color);
-  }
-  
-.navbar {
-	
+	.socialMedia-item:hover {
+		cursor: pointer;
+	}
+
+	.socialMedia-item.facebook {
+		fill: var(--facebook-color);
+	}
+
+	.socialMedia-item.youtube {
+		fill: var(--youtube-color);
+	}
 }
-  .navbar ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	padding: 30px 0 30px 0;
-	margin-bottom: -3px;
-  }
-  
-  .customNavLink {
-	display: inline-flex;
-	padding: 0 30px;
-  }
 
+.navbar {
+	max-height: 80px;
 
-  .customNavLink svg {
+	& ul {
+		display: flex;
+		list-style-type: none;
+		padding: 10px var(--margin-sides);
+		/* margin-bottom: -3px; */
+	}
+}
+
+li.customNavLink {
+	margin-right: 20px;
+}
+
+li.customNavLink svg {
 	padding-right: 5px;
-  }
+}
 
-  .customNavLink a {
-	padding: 0px 10px 0px 10px;
-	cursor: pointer;
-  }
 
-  .customNavLink a:hover {
-	color: var(--hover-nav-color, #005521);
-  }
+li.customNavLink a:hover {
+	color: var(--main-green, #0D7037);
+}
 
-  .customNavLink a:hover svg{
-	fill: var(--hover-nav-color, #005521);
-  }
-  
-  .customNavLink a.active {
-	color: var(--hover-nav-color, #005521);
-	border-bottom: 3px solid var(--hover-nav-color);
+li.customNavLink a:hover svg {
+	fill: var(--main-green, #0D7037);
+}
+
+li.customNavLink a.active {
+	/* color: var(--main-green, #0D7037);
+	border-bottom: 3px solid var(--main-green); */
 	padding-bottom: 10px;
-  }
+}
 
-  .customNavLink a.active svg {
-	fill: var(--hover-nav-color, #005521);
-  }
+li.customNavLink a {
+	position: relative;
+	padding: 10px 30px 0px 30px;
+	cursor: pointer;
+}
 
-  .homeContain {
-	background-image: url('../assets/pexels-jeshootscom-834892.jpg');
+li.customNavLink a.active::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 71, 24, 0.432);
+	border-radius: 2px;
+	bottom: 0;
+	left: 0;
+}
+
+li.customNavLink a.active svg {
+	fill: var(--main-green, #0D7037);
+}
+
+.homeContain {
+	border-top: 3px solid var(--main-green, #0D7037);
+	border-bottom: 3px solid var(--main-green, #0D7037);
+	/* background-image: url('../assets/pexels-jeshootscom-834892.jpg');
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover; */
 	/* filter: brightness(0.5); */
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	color: #ffffff;
-  }
+	color: #ffffff; */
+	/* background-color: #d3d600; */
+}
 
-  .homeContain > div {
+/* .homeContain > div {
 	background-color: rgba(30,20,0,.5);
-	padding: 150px 50px 250px;
+	padding: 150px 50px;
   }
 
   .homeContain h1 {
@@ -144,9 +145,9 @@ section > img {
   .homeContain p {
 	font-size: 25px;
 	padding: 20px 0 50px;
-  }
-  
-  .home-button {
+  } */
+
+/* .home-button {
 	width: fit-content;
 	background-color: transparent;
 	font-size: 35px;
@@ -154,20 +155,20 @@ section > img {
 	color: #ffffff;
 	border: 2px solid #ffffff;
 	box-sizing: content-box;
-  }
+}
 
-  .home-button:hover {
+.home-button:hover {
 	cursor: pointer;
 	background-color: var(--hover-nav-color);
 	border: 2px solid var(--hover-nav-color);
 	border-radius: 5px;
-	
-  }
-  /* About style */
+} */
+
+/* priceContainer styles */
 #priceContainer {
-	background-image: url('../assets/Projekt bez nazwy.png');
+	background-image: url('../assets/background-price.png');
 	background-repeat: no-repeat;
-    background-size:cover;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -180,22 +181,6 @@ section > img {
 	padding: 100px;
 }
 
-.priceHeader {
-	text-align: center;
-	color: #ffffff;
-}
-
-.priceHeader svg {
-	font-size: 40px;
-	fill: #d3d600;
-	position: relative;
-}
-
-.priceHeader h1 {
-	padding: 50px 0;
-	font-weight: 100;
-	letter-spacing: 2.0px;
-}
 
 .service-list {
 	list-style: none;
@@ -204,7 +189,7 @@ section > img {
 
 .service-item {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 	padding: 10px 30px;
 }
 
@@ -219,16 +204,17 @@ section > img {
 
 .service-item:nth-child(even) {
 	background-color: #696969b7;
-	border-top: 1px solid #d3d600;
-	border-bottom: 1px solid #d3d600;
+	border-top: 1px solid var(--main-green);
+	border-bottom: 1px solid var(--main-green);
 }
 
 #realizationsContainer {
 	padding: 50px;
-	background: url('../assets/MacBook\ Pro\ 16_\ -\ 2.png') no-repeat ;
+	background: url('../assets/xyz.png') no-repeat;
 	background-size: cover;
 }
-#realizationsContainer > .category-list {
+
+#realizationsContainer>.category-list {
 	display: flex;
 }
 
@@ -251,11 +237,13 @@ section > img {
 	padding: 10px;
 	font-weight: 100;
 }
+
 .categorySquare {
 	width: 250px;
 	height: 250px;
 	position: relative;
-	background-image: url('../assets/home-background.png') center center no-repeat,
+	background-image: url('../assets/test.jpg');
+	background-size: cover;
 }
 
 .categorySquare img {
@@ -269,27 +257,27 @@ section > img {
 	justify-content: space-around;
 	padding-bottom: 100px;
 }
-.category-list > div {
-	margin:20px;
+
+.category-list>div {
+	margin: 20px;
 	cursor: pointer;
 	transition: all .3s linear;
 }
 
-.category-list > div:hover {
+.category-list>div:hover {
 	transform: scale(1.1);
 }
 
 .categorySquare::before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-		bottom: 0;
-		left: 0;
-	}
-
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+	bottom: 0;
+	left: 0;
+}
 
 #aboutContainer {
 	padding: 100px 50px 200px 50px;
@@ -311,11 +299,12 @@ section > img {
 	padding: 50px 0;
 	letter-spacing: 2.0px;
 }
+
 .ikony {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	align-items: start;
+	align-items: flex-start;
 }
 
 .xyz {
@@ -327,7 +316,6 @@ section > img {
 	filter: invert(1);
 	padding: 15px 0;
 	max-width: 20%;
-
 }
 
 #contactContainer {

@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./index.css";
-import "./responsiveWeb.css";
+import "./styles/index.css";
+import "./styles/responsiveWeb.css";
 import "./styles/components.css";
+import "./styles/pages.css";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -5,6 +5,7 @@
 	--grey:#333;
 	--facebook-color: #1877F2;
 	--youtube-color: #d60000;
+	--primary-yellow: #d3d600;
 	/* font's */
 	--primary-font: 'Oswald', sans-serif;
 	--secondary-font: system-ui;
@@ -14,6 +15,7 @@
 	--test-var: green;
 	/* margins */
 	--margin-sides: 50px;
+
 
 }
 

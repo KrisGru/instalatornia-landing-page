@@ -8,7 +8,7 @@ import shield from "../assets/shield.png";
 import support from "../assets/support.png";
 import extensionCord from "../assets/extension-cord.png";
 
-import "./Page.css";
+// import "./Page.css";
 
 const About = () => {
   const aboutRef = useNav("About");

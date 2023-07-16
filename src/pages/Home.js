@@ -1,16 +1,13 @@
 import { useNav } from "../route/customHooks/useNav";
 import CustomNavLink from "../components/CustomNavLink";
 import { navLinks } from "../assets/data/consts";
-import { ReactComponent as FacebookIcon } from "../assets/icons/facebook.svg";
-import { ReactComponent as InstagramIcon } from "../assets/icons/instagram.svg";
-import { ReactComponent as YoutubeIcon } from "../assets/icons/youtube.svg";
 import { ReactComponent as PinIcon } from "../assets/icons/pin.svg";
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone.svg";
-import CarouselModal from "../components/CarouselModal";
+// import CarouselModal from "../components/CarouselModal";
 import logo from "../assets/logo-test-2.png";
 // import logo from "../assets/aaaaaaaaaaaaa.png";
-
-import "./Page.css";
+import SocialMedia from "../components/SocialMedia";
+// import "./Page.css";
 
 const Home = () => {
   const homeRef = useNav("homeContainer");
@@ -31,35 +28,7 @@ const Home = () => {
 
           <img src={logo} alt="Logo" />
 
-          <ul className="socialMedia-list">
-            <li>
-              <FacebookIcon
-                className="socialMedia-item facebook"
-                onClick={() =>
-                  window.open(
-                    "https://www.facebook.com/profile.php?id=100085298913640",
-                    "_blank"
-                  )
-                }
-              />
-            </li>
-            <li>
-              <InstagramIcon
-                className="socialMedia-item instagram"
-                onClick={() =>
-                  window.open("https://www.instagram.com/", "_blank")
-                }
-              />
-            </li>
-            <li>
-              <YoutubeIcon
-                className="socialMedia-item youtube"
-                onClick={() =>
-                  window.open("https://www.youtube.com/", "_blank")
-                }
-              />
-            </li>
-          </ul>
+          <SocialMedia />
         </header>
 
         <nav className="navbar">
@@ -75,14 +44,14 @@ const Home = () => {
         </nav>
       </div>
       <div className="homeContain">
-        <CarouselModal />
-        {/* <div>
+        {/* <CarouselModal /> */}
+        <div>
           <h1>Postaw na specjalistów i sprawdzone rozwiązania</h1>
           <p>
             Rozwiążemy każdy problem. Zapraszamy do zapoznania się z ofertą.
           </p>
           <button className="home-button">Zobacz</button>
-        </div> */}
+        </div>
       </div>
     </section>
   );

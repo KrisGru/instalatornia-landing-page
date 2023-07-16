@@ -1,5 +1,5 @@
 import Slider from "../assets/index";
-import "./CarouselModal.css";
+import "../styles/CarouselModal.css";
 import { carouselGallery as content } from "../assets/data/consts";
 
 // dokumentacja carousel

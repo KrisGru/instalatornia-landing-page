@@ -3,7 +3,7 @@ import { ReactComponent as FacebookIcon } from "../assets/icons/youtube.svg";
 import { useNav } from "../route/customHooks/useNav";
 // import Header from "../components/Header";
 // import GalleryBox from "../components/GalleryBox";
-import "./Page.css";
+// import "./Page.css";
 
 import { realizationCategories } from "../assets/data/consts";
 

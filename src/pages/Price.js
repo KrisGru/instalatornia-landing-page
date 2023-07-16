@@ -4,7 +4,7 @@ import { services } from "../assets/data/consts";
 import logo from "../assets/logo-test-2.png";
 import TableRow from "../components/TableRow";
 import Header from "../components/Header";
-import "./Page.css";
+// import "./Page.css";
 
 const Price = () => {
   const priceRef = useNav("priceContainer");

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNav } from "../route/customHooks/useNav";
 import Header from "../components/Header";
-import logo from "../assets/logo-test-2.png";
+import logo from "../assets/logo-white.png";
 import SocialMedia from "../components/SocialMedia";
 
 const Contact = () => {

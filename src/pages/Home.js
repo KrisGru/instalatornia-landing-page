@@ -4,7 +4,7 @@ import { navLinks } from "../assets/data/consts";
 import { ReactComponent as PinIcon } from "../assets/icons/pin.svg";
 import { ReactComponent as PhoneIcon } from "../assets/icons/phone.svg";
 // import CarouselModal from "../components/CarouselModal";
-import logo from "../assets/logo-test-2.png";
+import logo from "../assets/logo.png";
 // import logo from "../assets/aaaaaaaaaaaaa.png";
 import SocialMedia from "../components/SocialMedia";
 // import "./Page.css";

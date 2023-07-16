@@ -1,7 +1,7 @@
 import React from "react";
 import { useNav } from "../route/customHooks/useNav";
 import { services } from "../assets/data/consts";
-import logo from "../assets/logo-test-2.png";
+import logo from "../assets/logo-white.png";
 import TableRow from "../components/TableRow";
 import Header from "../components/Header";
 // import "./Page.css";

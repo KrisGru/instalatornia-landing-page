@@ -8,14 +8,16 @@ function App() {
     <NavigationContextProvider>
       <div className="appContainer">
         <nav id="hideNav">
-          {navLinks.map(({ title, scrollToId }, idx) => (
-            <CustomNavLink
-              key={idx}
-              navLinkId={title}
-              scrollToId={scrollToId}
-              destination={true}
-            />
-          ))}
+          <ul>
+            {navLinks.map(({ title, scrollToId }, idx) => (
+              <CustomNavLink
+                key={idx}
+                navLinkId={title}
+                scrollToId={scrollToId}
+                destination={true}
+              />
+            ))}
+          </ul>
         </nav>
         <Home />
         <Price />

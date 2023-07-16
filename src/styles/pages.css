@@ -150,10 +150,11 @@ li.customNavLink a.active svg {
 .home-button {
 	width: fit-content;
 	background-color: transparent;
-	font-size: 35px;
-	padding: 10px;
+	font-size: 20px;
+	padding: 10px 20px;
 	color: #ffffff;
 	border: 2px solid #ffffff;
+	border-radius: 4px;
 	box-sizing: content-box;
 }
 

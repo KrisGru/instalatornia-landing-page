@@ -1,9 +1,8 @@
 export const navLinks = [
-  { id: 1, title: "Strona Główna", scrollToId: "homeContainer" },
-  { id: 2, title: "Wycena", scrollToId: "priceContainer" },
-  { id: 3, title: "Realizacje", scrollToId: "realizationsContainer" },
-  { id: 4, title: "O firmie", scrollToId: "aboutUsContainer" },
-  { id: 5, title: "Kontakt", scrollToId: "contactContainer" },
+  { title: "Strona Główna", id: "homeContainer" },
+  { title: "Wycena", id: "priceContainer" },
+  { title: "O firmie", id: "aboutUsContainer" },
+  { title: "Kontakt", id: "contactContainer" },
 ];
 
 export const services = [

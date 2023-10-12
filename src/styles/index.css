@@ -33,6 +33,11 @@ body {
 	font-family: var(--primary-font, --secondary-font);
 }
 
+button {
+	font-family: var(--primary-font);
+}
+
+
 /* hide navigation style */
 section#homeContainer,
 section#aboutContainer,
@@ -73,4 +78,402 @@ section#contactContainer {
 
 #hideNav .customNavLink svg {
 	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* homeContainer styles */
+#webHeader {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px var(--margin-sides);
+
+	& ul {
+		width: 500px;
+	}
+}
+
+.information-list {
+	font-size: 1.4em;
+	list-style-type: none;
+	margin: 0px;
+	display: flex;
+
+	& li {
+		margin-right: 50px;
+
+		.information-item {
+			padding-right: 5px;
+		}
+
+		.information-item.pin {
+			fill: var(--main-green);
+		}
+
+		.information-item.phone {
+			fill: var(--youtube-color);
+		}
+	}
+}
+
+.socialMedia-list {
+	display: inline-flex;
+	justify-content: flex-end;
+	list-style: none;
+
+	.socialMedia-item {
+		margin-left: 15px;
+	}
+
+	.socialMedia-item:hover {
+		cursor: pointer;
+	}
+
+	.socialMedia-item.facebook {
+		fill: var(--facebook-color);
+	}
+
+	.socialMedia-item.youtube {
+		fill: var(--youtube-color);
+	}
+}
+
+.navbar {
+	max-height: 80px;
+
+	& ul {
+		display: flex;
+		list-style-type: none;
+		padding: 10px var(--margin-sides);
+		/* margin-bottom: -3px; */
+	}
+}
+
+li.customNavLink {
+	margin-right: 20px;
+}
+
+li.customNavLink svg {
+	padding-right: 5px;
+}
+
+
+li.customNavLink a:hover {
+	color: var(--main-green, #0D7037);
+}
+
+li.customNavLink a:hover svg {
+	fill: var(--main-green, #0D7037);
+}
+
+li.customNavLink a.active {
+	/* color: var(--main-green, #0D7037);
+	border-bottom: 3px solid var(--main-green); */
+	padding-bottom: 10px;
+}
+
+li.customNavLink a {
+	position: relative;
+	padding: 10px 30px 0px 30px;
+	cursor: pointer;
+}
+
+li.customNavLink a.active::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 71, 24, 0.432);
+	border-radius: 2px;
+	bottom: 0;
+	left: 0;
+}
+
+li.customNavLink a.active svg {
+	fill: var(--main-green, #0D7037);
+}
+
+
+.homeContain > div {
+	background-color: rgba(30,20,0,.5);
+	padding: 150px 50px;
+  }
+
+  .homeContain h1 {
+	position: relative;
+	font-size: 45px;
+	font-weight: 100;
+  }
+
+  .homeContain h1::before {
+	content: "";
+	position: absolute;
+	width: 40px;
+	border-top: 5px solid #ffffff;
+	top: -20px;
+	left: 0;
+  }
+
+  .homeContain p {
+	font-size: 25px;
+	padding: 20px 0 50px;
+  }
+ 
+.home-button {
+	width: fit-content;
+	background-color: transparent;
+	font-size: 20px;
+	padding: 10px 20px;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+	box-sizing: content-box;
+}
+
+.home-button:hover {
+	cursor: pointer;
+	background-color: var(--hover-nav-color);
+	border: 2px solid var(--hover-nav-color);
+	border-radius: 5px;
+} 
+
+/* priceContainer styles */
+#priceContainer {
+	background-image: url('../assets/background-price.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#priceContainer > div {
+	background-color: #1c1c1ce0;
+	width: 100%;
+	padding: 100px;
+}
+
+
+.service-list {
+	list-style: none;
+	color: #ffffff;
+}
+
+.service-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+}
+
+.service-item .serviceName {
+	width: 400px;
+}
+
+.servicePrice {
+	text-align: center;
+	width: 150px;
+}
+
+.service-item:nth-child(even) {
+	background-color: #696969b7;
+	border-top: 1px solid var(--main-green);
+	border-bottom: 1px solid var(--main-green);
+}
+
+#realizationsContainer {
+	padding: 50px;
+	background: url('../assets/xyz.png') no-repeat;
+	background-size: cover;
+}
+
+#realizationsContainer>.category-list {
+	display: flex;
+}
+
+.realizationsHeader {
+	text-align: center;
+}
+
+.realizationsHeader svg {
+	font-size: 40px;
+	fill: var(--main-green);
+	position: relative;
+}
+
+.realizationsHeader h1 {
+	padding: 50px 0;
+	letter-spacing: 2.0px;
+}
+
+.categoryTitle {
+	padding: 10px;
+	font-weight: 100;
+}
+
+.categorySquare {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	/* background-image: url('../assets/test.jpg'); */
+	background-size: cover;
+}
+
+.categorySquare img {
+	width: 100%;
+	height: 100%;
+}
+
+.category-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 100px;
+}
+
+.category-list>div {
+	margin: 20px;
+	cursor: pointer;
+	transition: all .3s linear;
+}
+
+.category-list>div:hover {
+	transform: scale(1.1);
+}
+
+.categorySquare::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+	bottom: 0;
+	left: 0;
+}
+
+#aboutContainer {
+	padding: 100px 50px 200px 50px;
+	border-top: 3px solid var(--main-green);
+	border-bottom: 3px solid var(--main-green);
+}
+
+.aboutHeader {
+	text-align: center;
+}
+
+.aboutHeader svg {
+	font-size: 40px;
+	fill: var(--main-green);
+	position: relative;
+}
+
+.aboutHeader h1 {
+	padding: 50px 0;
+	letter-spacing: 2.0px;
+}
+
+.ikony {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.xyz {
+	width: 300px;
+	text-align: center;
+}
+
+.xyz img {
+	filter: invert(1);
+	padding: 15px 0;
+	max-width: 20%;
+}
+
+#contactContainer {
+	background-color: var(--main-green);
+
+}
+
+.contactHeader {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.contactHeader svg {
+	font-size: 40px;
+	fill: #ffffff;
+	position: relative;
+}
+
+.contactHeader h1 {
+	padding: 50px 0;
+	letter-spacing: 2.0px;
+}
+
+.contactContent {
+	display: flex;
+	padding: var(--margin-sides);
+	
+	& div {
+		flex-basis: 50%;
+	}
+	& form {
+		flex-basis: 50%;
+		padding: 0 3%;
+	}
+}
+
+/* formularz wysyłki maila */
+.contact-form {
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+#footer {
+	padding: var(--margin-sides);
+	width: 100%;
+	height: 100px;
+	background-color: var(--grey);
 }

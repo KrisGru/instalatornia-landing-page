@@ -1,13 +1,13 @@
 :root {
 	/* colors */
-	--main-green: #0D7037;
+	--main-green: #0d7037;
 	--light-green: #34ff00b3;
-	--grey:#333;
-	--facebook-color: #1877F2;
+	--grey: #333;
+	--facebook-color: #1877f2;
 	--youtube-color: #d60000;
 	--primary-yellow: #d3d600;
 	/* font's */
-	--primary-font: 'Oswald', sans-serif;
+	--primary-font: "Oswald", sans-serif;
 	--secondary-font: system-ui;
 	--primary-color: #333;
 	--hover-nav-color: #005521;
@@ -37,6 +37,21 @@ button {
 	font-family: var(--primary-font);
 }
 
+.text_white {
+	color: #ffffff;
+}
+
+.like_h1 {
+	font-size: 48px;
+}
+
+.like_h2 {
+	font-size: 38px;
+}
+
+.like_h3 {
+	font-size: 26px;
+}
 
 /* hide navigation style */
 section#homeContainer,
@@ -79,16 +94,6 @@ section#contactContainer {
 #hideNav .customNavLink svg {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* homeContainer styles */
 #webHeader {
@@ -165,13 +170,12 @@ li.customNavLink svg {
 	padding-right: 5px;
 }
 
-
 li.customNavLink a:hover {
-	color: var(--main-green, #0D7037);
+	color: var(--main-green, #0d7037);
 }
 
 li.customNavLink a:hover svg {
-	fill: var(--main-green, #0D7037);
+	fill: var(--main-green, #0d7037);
 }
 
 li.customNavLink a.active {
@@ -187,7 +191,7 @@ li.customNavLink a {
 }
 
 li.customNavLink a.active::after {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -198,35 +202,34 @@ li.customNavLink a.active::after {
 }
 
 li.customNavLink a.active svg {
-	fill: var(--main-green, #0D7037);
+	fill: var(--main-green, #0d7037);
 }
 
-
 .homeContain > div {
-	background-color: rgba(30,20,0,.5);
+	background-color: rgba(30, 20, 0, 0.5);
 	padding: 150px 50px;
-  }
+}
 
-  .homeContain h1 {
+.homeContain h1 {
 	position: relative;
 	font-size: 45px;
 	font-weight: 100;
-  }
+}
 
-  .homeContain h1::before {
+.homeContain h1::before {
 	content: "";
 	position: absolute;
 	width: 40px;
 	border-top: 5px solid #ffffff;
 	top: -20px;
 	left: 0;
-  }
+}
 
-  .homeContain p {
+.homeContain p {
 	font-size: 25px;
 	padding: 20px 0 50px;
-  }
- 
+}
+
 .home-button {
 	width: fit-content;
 	background-color: transparent;
@@ -243,11 +246,11 @@ li.customNavLink a.active svg {
 	background-color: var(--hover-nav-color);
 	border: 2px solid var(--hover-nav-color);
 	border-radius: 5px;
-} 
+}
 
 /* priceContainer styles */
 #priceContainer {
-	background-image: url('../assets/background-price.png');
+	background-image: url("../assets/background-price.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -261,7 +264,6 @@ li.customNavLink a.active svg {
 	width: 100%;
 	padding: 100px;
 }
-
 
 .service-list {
 	list-style: none;
@@ -291,11 +293,11 @@ li.customNavLink a.active svg {
 
 #realizationsContainer {
 	padding: 50px;
-	background: url('../assets/xyz.png') no-repeat;
+	background: url("../assets/xyz.png") no-repeat;
 	background-size: cover;
 }
 
-#realizationsContainer>.category-list {
+#realizationsContainer > .category-list {
 	display: flex;
 }
 
@@ -311,7 +313,7 @@ li.customNavLink a.active svg {
 
 .realizationsHeader h1 {
 	padding: 50px 0;
-	letter-spacing: 2.0px;
+	letter-spacing: 2px;
 }
 
 .categoryTitle {
@@ -339,18 +341,18 @@ li.customNavLink a.active svg {
 	padding-bottom: 100px;
 }
 
-.category-list>div {
+.category-list > div {
 	margin: 20px;
 	cursor: pointer;
-	transition: all .3s linear;
+	transition: all 0.3s linear;
 }
 
-.category-list>div:hover {
+.category-list > div:hover {
 	transform: scale(1.1);
 }
 
 .categorySquare::before {
-	content: '';
+	content: "";
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -378,7 +380,7 @@ li.customNavLink a.active svg {
 
 .aboutHeader h1 {
 	padding: 50px 0;
-	letter-spacing: 2.0px;
+	letter-spacing: 2px;
 }
 
 .ikony {
@@ -401,7 +403,6 @@ li.customNavLink a.active svg {
 
 #contactContainer {
 	background-color: var(--main-green);
-
 }
 
 .contactHeader {
@@ -417,13 +418,13 @@ li.customNavLink a.active svg {
 
 .contactHeader h1 {
 	padding: 50px 0;
-	letter-spacing: 2.0px;
+	letter-spacing: 2px;
 }
 
 .contactContent {
 	display: flex;
 	padding: var(--margin-sides);
-	
+
 	& div {
 		flex-basis: 50%;
 	}
@@ -435,41 +436,40 @@ li.customNavLink a.active svg {
 
 /* formularz wysyłki maila */
 .contact-form {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+	display: block;
+	margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+	background-color: #45a049;
 }
-
 
 #footer {
 	padding: var(--margin-sides);

@@ -392,5 +392,4 @@ input[type="submit"]:hover {
 	padding: var(--margin-sides);
 	width: 100%;
 	height: 100px;
-	background-color: var(--grey);
 }

@@ -2,7 +2,7 @@ import { styled, keyframes } from "styled-components";
 
 export const Link = styled.a`
 	cursor: pointer;
-	margin: 8px;
+	margin: 8px 20px;
 	padding: 7px 12px;
 	background: transparent;
 	position: relative;
@@ -28,4 +28,24 @@ export const Link = styled.a`
 	}
 
   }
+`;
+
+export const Navbar = styled.div`
+	max-width: 1480px;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media (min-width: 600px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@media (min-width: 768px) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 `;

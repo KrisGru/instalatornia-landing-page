@@ -1,0 +1,59 @@
+.test_background {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	background: linear-gradient(
+		218deg,
+		#688e28,
+		#c6bb1e,
+		#7e8e81,
+		#0d7037,
+		#38aebb,
+		#7e8e81,
+		#0d146e
+	);
+	background-size: 1400% 1400%;
+	animation: gradient 16s ease infinite;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 82%;
+	}
+	50% {
+		background-position: 100% 19%;
+	}
+	100% {
+		background-position: 0% 82%;
+	}
+}
+
+.navbar {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.title {
+	position: relative;
+}
+
+.title::before {
+	content: url("./../assets/roof.svg");
+	top: -60px;
+	left: -40px;
+	position: absolute;
+}
+
+.title::after {
+	content: url("./../assets/bulb.svg");
+	top: -60px;
+	right: 40px;
+	position: absolute;
+}

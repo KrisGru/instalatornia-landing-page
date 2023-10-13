@@ -16,7 +16,7 @@ export const useOnScreen = (ref) => {
 	const observer = new IntersectionObserver(functionObserve, optionsObserve);
 
 	useEffect(() => {
-		observer.observe(ref.current);
+		// observer.observe(ref.current);
 		return () => {
 			observer.disconnect();
 		};

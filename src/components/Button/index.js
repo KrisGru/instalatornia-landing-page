@@ -2,7 +2,7 @@ import { StyledButton } from "./styles";
 import { useState, useEffect } from "react";
 import "./button.css";
 
-const Button = ({ children, background, color }) => {
+const Button = ({ children, background, color, size }) => {
 	// console.log("transparent", background);
 	const [coords, setCoords] = useState({ x: -1, y: -1 });
 	const [isRippling, setIsRippling] = useState(false);
@@ -20,7 +20,7 @@ const Button = ({ children, background, color }) => {
 
 	return (
 		<button
-			className='ripple-button'
+			className={`ripple-button button_${size}`}
 			onClick={(e) => {
 				const rect = e.target.getBoundingClientRect();
 				setCoords({

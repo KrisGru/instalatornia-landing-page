@@ -1,5 +1,6 @@
 import { HeaderWrapper, HeaderText } from "./styles";
 import logo from "../../assets/logo-white.png";
+import { ReactComponent as FacebookIcon } from "../../assets/icons/instagram.svg";
 import { motion } from "framer-motion";
 
 import { Text } from "styles";
@@ -11,14 +12,15 @@ const Header = ({ section, text, colorText }) => {
 			{section === "contact" && (
 				<img src={logo} alt='Logo' width='350px' />
 			)}
-			{/* <Text size='h2' color={colorText}>
+			{section === "about" && <FacebookIcon height='70px' />}
+			<Text size='h2' color={colorText}>
 				{text}
-			</Text> */}
-			<motion.div>
+			</Text>
+			{/* <motion.div>
 				<HeaderText animate={{ y: 10 }}>
 					<span>{text}</span>
 				</HeaderText>
-			</motion.div>
+			</motion.div> */}
 		</HeaderWrapper>
 	);
 };

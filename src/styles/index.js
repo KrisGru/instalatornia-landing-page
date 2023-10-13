@@ -8,6 +8,7 @@ export const Text = styled.div`
 	padding: 50px 0;
 	font-weight: 100;
 	letter-spacing: 2px;
+	text-align: center;
 
 	color: ${({ color }) => {
 		if (color === "black") return "#000000";

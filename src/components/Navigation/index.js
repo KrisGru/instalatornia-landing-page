@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { Link } from "./styles";
+import { Link, Navbar } from "./styles";
 import { useContext } from "react";
 import { NavigationContext } from "router/context/context";
 import { useScrollTo } from "router/hooks/useScrollTo";
+import Logo from "../../components/Logo";
+import Button from "components/Button";
 
 const navLinks = [
 	{ title: "Strona Główna", id: "home_section", path: "#" },
@@ -16,16 +18,20 @@ const Navigation = () => {
 	const { scrollToSection } = useScrollTo();
 
 	return (
-		<>
-			{navLinks.map(({ title, id, path }, idx) => (
-				<Link
-					key={idx}
-					onClick={() => scrollToSection(id)}
-					active={!!(activeSection === id)}>
-					{title}
-				</Link>
-			))}
-		</>
+		<Navbar>
+			<Logo size={"small"} type={"dark"} />
+			<div>
+				{navLinks.map(({ title, id, path }, idx) => (
+					<Link
+						key={idx}
+						onClick={() => scrollToSection(id)}
+						active={!!(activeSection === id)}>
+						{title}
+					</Link>
+				))}
+			</div>
+			<Button color={"black"}>Zadzwoń</Button>
+		</Navbar>
 	);
 };
 

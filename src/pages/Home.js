@@ -1,7 +1,6 @@
 import { useNav } from "../router/customHooks/useNav";
 
-import Logo from "../components/Logo";
-import { Navbar, Container, Section } from "./styles/styles";
+import { Container, Section } from "./styles/styles";
 import Button from "components/Button";
 import Navigation from "components/Navigation";
 import { Text } from "styles";
@@ -13,11 +12,7 @@ const Home = () => {
 	return (
 		<>
 			<Section ref={homeRef} id='home_section'>
-				<Navbar>
-					<Logo size={"small"} type={"dark"} />
-					<Navigation />
-					<Button color={"black"}>Zadzwoń</Button>
-				</Navbar>
+				<Navigation />
 			</Section>
 			<Section id='homeBackground' background={"home_background"}>
 				<Container>

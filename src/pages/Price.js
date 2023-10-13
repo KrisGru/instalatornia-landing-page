@@ -9,11 +9,11 @@ import Header from "../components/Header";
 import SectionAnimate from "components/Section";
 
 const Price = () => {
-	const priceRef = useNav("priceContainer");
+	const priceRef = useNav("price_section");
 
 	return (
 		<SectionAnimate>
-			<Section ref={priceRef} id='priceContainer'>
+			<Section ref={priceRef} id='price_section'>
 				<Container>
 					<Header
 						section='price'

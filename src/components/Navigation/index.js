@@ -8,9 +8,9 @@ import Button from "components/Button";
 
 const navLinks = [
 	{ title: "Strona Główna", id: "home_section", path: "#" },
-	{ title: "Cennik", id: "priceContainer", path: "cennik" },
-	{ title: "O nas", id: "aboutUsContainer", path: "o_nas" },
-	{ title: "Kontakt", id: "contactContainer", path: "kontakt" },
+	{ title: "Cennik", id: "price_section", path: "cennik" },
+	{ title: "O nas", id: "about_section", path: "o_nas" },
+	{ title: "Kontakt", id: "contact_section", path: "kontakt" },
 ];
 
 const Navigation = () => {

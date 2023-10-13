@@ -9,10 +9,10 @@ const Contact = () => {
 	// this ref is used to register the navLinkId that's
 	// currently in view, and apply activeClass styling
 	// to the corresponding nav childElement
-	const contactRef = useNav("Contact");
+	const contactRef = useNav("contact_section");
 	return (
 		<div className='test_background'>
-			<Section ref={contactRef}>
+			<Section ref={contactRef} id='contact_section'>
 				<Container>
 					<SocialMedia className='socialMedia-contact' />
 					<Header section='contact' text={"KONTAKT"} />

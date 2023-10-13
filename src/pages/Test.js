@@ -9,7 +9,7 @@ import Button from "components/Button";
 
 const Test = () => {
 	return (
-		<div className='test_background'>
+		<div className='test_background' id='home_section'>
 			<div className='navbar'>
 				<Navigation />
 			</div>

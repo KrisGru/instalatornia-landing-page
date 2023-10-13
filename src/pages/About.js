@@ -13,9 +13,9 @@ import Header from "components/Header";
 // import "./Page.css";
 
 const About = () => {
-	const aboutRef = useNav("About");
+	const aboutRef = useNav("about_section");
 	return (
-		<Section>
+		<Section id='about_section'>
 			<Container>
 				<Header
 					section='about'

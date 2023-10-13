@@ -1,6 +1,10 @@
+/* dorzuć to potem do section */
 #homeBackground {
 	background-image: url("../../assets/home_background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 96px 0;
+}
+
+#priceContainer {
+	background-color: #1c1c1c;
 }

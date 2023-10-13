@@ -3,33 +3,39 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+			rel="stylesheet"
+		/>
 		<!-- testowa czcionka -->
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Work%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;display=swap">
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css?family=Work%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;display=swap"
+		/>
 		<title>Instalatornia</title>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script>
 			// When the user scrolls down 350px from the top of the document, slide down the header
-			window.onscroll = function () {
-				scrollFunction();
-			};
+			// window.onscroll = function () {
+			// 	scrollFunction();
+			// };
 
-			function scrollFunction() {
-				if (
-					document.body.scrollTop > 350 ||
-					document.documentElement.scrollTop > 350
-				) {
-					document.getElementById("hideNav").style.top = "0";
-				} else {
-					document.getElementById("hideNav").style.top = "-50px";
-				}
-			}
+			// function scrollFunction() {
+			// 	if (
+			// 		document.body.scrollTop > 350 ||
+			// 		document.documentElement.scrollTop > 350
+			// 	) {
+			// 		document.getElementById("hideNav").style.top = "0";
+			// 	} else {
+			// 		document.getElementById("hideNav").style.top = "-50px";
+			// 	}
+			// }
 		</script>
 	</body>
 </html>

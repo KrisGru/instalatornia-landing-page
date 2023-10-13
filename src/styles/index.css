@@ -151,17 +151,6 @@ section#contactContainer {
 	}
 }
 
-.navbar {
-	max-height: 80px;
-
-	& ul {
-		display: flex;
-		list-style-type: none;
-		padding: 10px var(--margin-sides);
-		/* margin-bottom: -3px; */
-	}
-}
-
 li.customNavLink {
 	margin-right: 20px;
 }
@@ -203,66 +192,6 @@ li.customNavLink a.active::after {
 
 li.customNavLink a.active svg {
 	fill: var(--main-green, #0d7037);
-}
-
-.homeContain > div {
-	background-color: rgba(30, 20, 0, 0.5);
-	padding: 150px 50px;
-}
-
-.homeContain h1 {
-	position: relative;
-	font-size: 45px;
-	font-weight: 100;
-}
-
-.homeContain h1::before {
-	content: "";
-	position: absolute;
-	width: 40px;
-	border-top: 5px solid #ffffff;
-	top: -20px;
-	left: 0;
-}
-
-.homeContain p {
-	font-size: 25px;
-	padding: 20px 0 50px;
-}
-
-.home-button {
-	width: fit-content;
-	background-color: transparent;
-	font-size: 20px;
-	padding: 10px 20px;
-	color: #ffffff;
-	border: 2px solid #ffffff;
-	border-radius: 4px;
-	box-sizing: content-box;
-}
-
-.home-button:hover {
-	cursor: pointer;
-	background-color: var(--hover-nav-color);
-	border: 2px solid var(--hover-nav-color);
-	border-radius: 5px;
-}
-
-/* priceContainer styles */
-#priceContainer {
-	background-image: url("../assets/background-price.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-
-#priceContainer > div {
-	background-color: #1c1c1ce0;
-	width: 100%;
-	padding: 100px;
 }
 
 .service-list {

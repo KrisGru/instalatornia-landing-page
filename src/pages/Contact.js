@@ -1,7 +1,6 @@
 import React from "react";
 import { useNav } from "../router/customHooks/useNav";
 import Header from "../components/Header";
-import logo from "../assets/logo-white.png";
 import SocialMedia from "../components/SocialMedia";
 
 const Contact = () => {
@@ -13,7 +12,7 @@ const Contact = () => {
 	return (
 		<section ref={contactRef} id='contactContainer'>
 			<SocialMedia className='socialMedia-contact' />
-			<Header logo={logo} text={"KONTAKT"} />
+			<Header section='contact' text={"KONTAKT"} />
 			<div className='contactContent'>
 				<div>
 					<h1>Arkadiusz Gruszczyński</h1>

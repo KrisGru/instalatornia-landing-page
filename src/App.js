@@ -1,5 +1,4 @@
 import { Home, Price, About, Contact } from "./pages";
-
 import { NavigationContextProvider } from "router/context/context";
 
 function App() {

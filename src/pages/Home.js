@@ -2,8 +2,10 @@ import { useNav } from "../router/customHooks/useNav";
 
 import Logo from "../components/Logo";
 import { Navbar, Container, Section } from "./styles/styles";
-import Button from "components/ui/Button";
-import Navigation from "components/ui/Navigation";
+import Button from "components/Button";
+import Navigation from "components/Navigation";
+import { Text } from "styles";
+import SectionAnimate from "components/Section";
 
 const Home = () => {
 	const homeRef = useNav("home_section");
@@ -19,9 +21,10 @@ const Home = () => {
 			</Section>
 			<Section id='homeBackground' background={"home_background"}>
 				<Container>
-					<h1 className='text_white like_h1'>
+					<Text size='h1'>
 						Postaw na specjalistów i sprawdzone rozwiązania
-					</h1>
+					</Text>
+
 					<p className='text_white' style={{ padding: "10px 0" }}>
 						Rozwiążemy każdy problem. Zapraszamy do zapoznania się z
 						ofertą.

@@ -41,18 +41,6 @@ button {
 	color: #ffffff;
 }
 
-.like_h1 {
-	font-size: 48px;
-}
-
-.like_h2 {
-	font-size: 38px;
-}
-
-.like_h3 {
-	font-size: 26px;
-}
-
 /* hide navigation style */
 section#homeContainer,
 section#aboutContainer,

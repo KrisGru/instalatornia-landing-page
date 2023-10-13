@@ -50,37 +50,19 @@ section#contactContainer {
 	scroll-margin: 40px;
 }
 
-#hideNav {
+#hide_nav {
 	z-index: 10;
-	color: white;
-	background-color: #0b0b0b;
+	color: #000000;
 	position: fixed;
-	/* Make it stick/fixed */
-	top: -50px;
-	/* Hide the navbar 50 px outside of the top view */
-	max-height: 50px;
-	padding: 0 250px;
-	/* align-items: center; */
+	top: -80px;
+	height: 80px;
 	width: 100%;
-	/* Full width */
-	transition: top 0.3s;
-	/* Transition effect when sliding down (and up) */
-}
 
-#hideNav ul {
-	width: 100%;
-	list-style: none;
-	display: inline-flex;
-	justify-content: space-around;
-}
-
-#hideNav .customNavLink {
-	padding: 10px 30px;
-	color: #ffffff;
-}
-
-#hideNav .customNavLink svg {
-	display: none;
+	transition: opacity 1.5s linear;
+	opacity: 0;
+	/* transition-property: width;
+	transition-duration: 2s;
+	transition-delay: 1s; */
 }
 
 /* homeContainer styles */

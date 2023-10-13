@@ -22,20 +22,25 @@
 		<div id="root"></div>
 		<script>
 			// When the user scrolls down 350px from the top of the document, slide down the header
-			// window.onscroll = function () {
-			// 	scrollFunction();
-			// };
+			window.onscroll = function () {
+				scrollFunction();
+			};
 
-			// function scrollFunction() {
-			// 	if (
-			// 		document.body.scrollTop > 350 ||
-			// 		document.documentElement.scrollTop > 350
-			// 	) {
-			// 		document.getElementById("hideNav").style.top = "0";
-			// 	} else {
-			// 		document.getElementById("hideNav").style.top = "-50px";
-			// 	}
-			// }
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 1 ||
+					document.documentElement.scrollTop > 1
+				) {
+					document.getElementById("hide_nav").style.top = "0";
+					document.getElementById("hide_nav").style.opacity = "1";
+					document.getElementById("hide_nav").style.background =
+						" #ffffffec";
+				} else {
+					document.getElementById("hide_nav").style.top = "-80px";
+					document.getElementById("hide_nav").style.opacity = "0";
+					document.getElementById("hide_nav").style.background = "";
+				}
+			}
 		</script>
 	</body>
 </html>

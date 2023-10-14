@@ -27,7 +27,11 @@ export const Link = styled.a`
 		transform: scaleX(1);
 	}
 
-  }
+	&.active::before {
+		border-bottom: 4px solid green;
+		border-radius: 4px;
+		background-color: green;
+	}
 `;
 
 export const Navbar = styled.div`

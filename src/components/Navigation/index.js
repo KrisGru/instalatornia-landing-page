@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const Navigation = () => {
-	const { activeSection, setActiveSection } = useContext(NavigationContext);
+	const { activeSection } = useContext(NavigationContext);
 	const { scrollToSection } = useScrollTo();
 
 	return (
@@ -25,7 +25,7 @@ const Navigation = () => {
 					<Link
 						key={idx}
 						onClick={() => scrollToSection(id)}
-						active={!!(activeSection === id)}>
+						className={`${activeSection === id ? "active" : ""}`}>
 						{title}
 					</Link>
 				))}

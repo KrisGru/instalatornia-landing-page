@@ -57,3 +57,15 @@
 	right: 40px;
 	position: absolute;
 }
+
+/* #title {
+	color: "red";
+	transform: translateX(100px);
+	opacity: 0;
+	transition: 1s;
+}
+
+#title.show {
+	transform: translateX(0);
+	opacity: 1;
+} */

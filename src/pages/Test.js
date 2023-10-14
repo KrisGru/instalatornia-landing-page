@@ -15,14 +15,13 @@ const Test = () => {
 			</div>
 
 			<div>
-				{/* <span>
-					<img src={logo} alt='Logo' width='500px' />
-				</span> */}
-
 				<div className='number_1'></div>
 				<Text size='h1'>
 					<span className='title'>
 						Postaw na specjalistów i sprawdzone rozwiązania
+					</span>
+					<span clsassName='' id='title123'>
+						Test postaw na specjalistów i sprawdzone rozwiązania
 					</span>
 				</Text>
 				<p

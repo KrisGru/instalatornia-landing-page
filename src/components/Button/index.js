@@ -2,7 +2,7 @@ import { StyledButton } from "./styles";
 import { useState, useEffect } from "react";
 import "./button.css";
 
-const Button = ({ children, background, color, size }) => {
+const Button = ({ children, handleClick, background, color, size }) => {
 	// console.log("transparent", background);
 	const [coords, setCoords] = useState({ x: -1, y: -1 });
 	const [isRippling, setIsRippling] = useState(false);
@@ -27,7 +27,7 @@ const Button = ({ children, background, color, size }) => {
 					x: e.clientX - rect.left,
 					y: e.clientY - rect.top,
 				});
-				onClick && onClick(e);
+				handleClick && handleClick();
 			}}>
 			{isRippling ? (
 				<span

@@ -12,7 +12,7 @@ export const Link = styled.a`
 		content: "";
 		position: absolute;
 		width: 100%;
-		height: 4px;
+		height: 2px;
 		border-radius: 4px;
 		background-color: green;
 		bottom: 0;
@@ -32,7 +32,7 @@ export const Link = styled.a`
 			content: "";
 			position: absolute;
 			width: 100%;
-			height: 4px;
+			height: 2px;
 			border-radius: 4px;
 			background-color: green;
 			bottom: 0;
@@ -45,6 +45,7 @@ export const Link = styled.a`
 `;
 
 export const Navbar = styled.div`
+	position: relative;
 	max-width: 1480px;
 	width: 100%;
 	height: 80px;
@@ -62,4 +63,13 @@ export const Navbar = styled.div`
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+`;
+
+export const MobileMeneWrapper = styled.div`
+	position: absolute;
+	right: 0;
+	top: 80px;
+	display: flex;
+	flex-direction: column;
+	background: white;
 `;

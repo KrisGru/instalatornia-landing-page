@@ -112,12 +112,22 @@ button {
 .xyz {
 	width: 300px;
 	text-align: center;
+	opacity: 0;
+	transform: translateX(100px);
+	transition: 0.5s;
 }
 
 .xyz img {
 	filter: invert(1);
 	padding: 15px 0;
 	max-width: 20%;
+}
+
+.xyz.animation {
+	opacity: 1;
+	transform: translateX(0);
+	width: 300px;
+	text-align: center;
 }
 
 #contactContainer {

@@ -1,7 +1,6 @@
 import { HeaderWrapper, HeaderText } from "./styles";
 import logo from "../../assets/logo-white.png";
 import { ReactComponent as FacebookIcon } from "../../assets/icons/instagram.svg";
-import { motion } from "framer-motion";
 
 import { Text } from "styles";
 

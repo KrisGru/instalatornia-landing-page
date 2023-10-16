@@ -80,7 +80,7 @@ export const carouselGallery = [
 	//   userProfile: "https://s7.postimg.cc/hsk2th5tn/6_3x.png",
 	// },
 ];
-z;
+
 export const realizationCategories = [
 	{
 		id: 1,

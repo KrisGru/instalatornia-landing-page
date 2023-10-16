@@ -1,11 +1,11 @@
 import React, { useContext, useRef } from "react";
-import { aboutCompany } from "../assets/data/consts";
-import idea from "../assets/idea.png";
-import support1 from "../assets/support1.png";
-import shield from "../assets/shield.png";
-import support from "../assets/support.png";
-import extensionCord from "../assets/extension-cord.png";
-import { Container, Section } from "./styles/styles";
+import { aboutCompany } from "../../assets/data/consts";
+import idea from "../../assets/idea.png";
+import support1 from "../../assets/support1.png";
+import shield from "../../assets/shield.png";
+import support from "../../assets/support.png";
+import extensionCord from "../../assets/extension-cord.png";
+import { Container, Section } from "../styles/styles";
 import Header from "components/Header";
 import { useOnScreen } from "hooks/useOnScreen";
 import { NavigationContext } from "context";
@@ -56,7 +56,9 @@ const About = () => {
 						}
 
 						return (
-							<div key={index} className='xyz'>
+							<div
+								key={index}
+								className={isVisible ? "xyz animation" : "xyz"}>
 								{imgSrc}
 								<p>{info.description}</p>
 							</div>

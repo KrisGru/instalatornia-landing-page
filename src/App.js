@@ -1,4 +1,3 @@
-import Test from "pages/Test";
 import { Home, Price, About, Contact } from "./pages";
 import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
@@ -11,9 +10,8 @@ function App() {
 				<Navigation />
 			</div>
 			<div className='appContainer'>
-				<Test />
+				<Home />
 				<About />
-				{/* <Home /> */}
 				<Price />
 				<Contact />
 			</div>

@@ -9,7 +9,6 @@ export const useOnScreen = (ref, threshold = "0.75") => {
 			([entry]) => {
 				setIsVisible(entry.isIntersecting);
 				if (entry.isIntersecting) {
-					console.log("ref.current.id", ref.current.id);
 					setActiveSection(ref.current.id);
 				}
 			},

@@ -1,7 +1,5 @@
-import React from "react";
-import { useNav } from "../router/customHooks/useNav";
+import React, { useContext, useRef } from "react";
 import { aboutCompany } from "../assets/data/consts";
-import { ReactComponent as FacebookIcon } from "../assets/icons/instagram.svg";
 import idea from "../assets/idea.png";
 import support1 from "../assets/support1.png";
 import shield from "../assets/shield.png";
@@ -9,13 +7,15 @@ import support from "../assets/support.png";
 import extensionCord from "../assets/extension-cord.png";
 import { Container, Section } from "./styles/styles";
 import Header from "components/Header";
-
-// import "./Page.css";
+import { useOnScreen } from "hooks/useOnScreen";
+import { NavigationContext } from "context";
 
 const About = () => {
-	const aboutRef = useNav("about_section");
+	const aboutRef = useRef(null);
+	const { isVisible } = useOnScreen(aboutRef);
+
 	return (
-		<Section id='about_section'>
+		<Section ref={aboutRef} id='about_section'>
 			<Container>
 				<Header
 					section='about'

@@ -1,13 +1,12 @@
-import { useNav } from "../router/customHooks/useNav";
-
 import { Container, Section } from "./styles/styles";
 import Button from "components/Button";
 import Navigation from "components/Navigation";
 import { Text } from "styles";
 import SectionAnimate from "components/Section";
+import { useRef } from "react";
 
 const Home = () => {
-	const homeRef = useNav("home_section");
+	const homeRef = useRef(null);
 
 	return (
 		<>

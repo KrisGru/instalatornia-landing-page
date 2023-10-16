@@ -1,6 +1,6 @@
 import Test from "pages/Test";
 import { Home, Price, About, Contact } from "./pages";
-import { NavigationContextProvider } from "router/context/context";
+import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
 import "./pages/test.css";
 

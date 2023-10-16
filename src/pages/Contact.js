@@ -1,15 +1,14 @@
-import React from "react";
-import { useNav } from "../router/customHooks/useNav";
+import React, { useContext, useRef } from "react";
 import Header from "../components/Header";
 import SocialMedia from "../components/SocialMedia";
 import { Container, Section } from "./styles/styles";
+import { NavigationContext } from "context";
+import { useOnScreen } from "hooks/useOnScreen";
 
 const Contact = () => {
-	// useNav takes in a navLinkId and returns a ref
-	// this ref is used to register the navLinkId that's
-	// currently in view, and apply activeClass styling
-	// to the corresponding nav childElement
-	const contactRef = useNav("contact_section");
+	const contactRef = useRef(null);
+	const { isVisible } = useOnScreen(contactRef);
+
 	return (
 		<div className='test_background'>
 			<Section ref={contactRef} id='contact_section'>

@@ -1,15 +1,17 @@
-import SectionAnimate from "components/Section";
 import "./test.css";
 import { Text } from "styles";
 import Navigation from "components/Navigation";
-import { Container } from "./styles/styles";
-
-import logo from "assets/logo-white.png";
 import Button from "components/Button";
+import { useContext, useRef } from "react";
+import { useOnScreen } from "hooks/useOnScreen";
+import { NavigationContext } from "context";
 
 const Test = () => {
+	const homeRef = useRef();
+	const { isVisible } = useOnScreen(homeRef);
+
 	return (
-		<div className='test_background' id='home_section'>
+		<div ref={homeRef} className='test_background' id='home_section'>
 			<div className='navbar'>
 				<Navigation />
 			</div>
@@ -20,7 +22,9 @@ const Test = () => {
 					<span className='title'>
 						Postaw na specjalistów i sprawdzone rozwiązania
 					</span>
-					<span clsassName='' id='title123'>
+					<span
+						className={isVisible ? "animation" : ""}
+						id='title123'>
 						Test postaw na specjalistów i sprawdzone rozwiązania
 					</span>
 				</Text>

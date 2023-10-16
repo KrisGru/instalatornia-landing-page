@@ -27,10 +27,20 @@ export const Link = styled.a`
 		transform: scaleX(1);
 	}
 
-	&.active::before {
-		border-bottom: 4px solid green;
-		border-radius: 4px;
-		background-color: green;
+	&.active {
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			border-radius: 4px;
+			background-color: green;
+			bottom: 0;
+			left: 0;
+			transform-origin: right;
+			transform: scaleX(1);
+			transition: transform 0.3s ease-in-out;
+		}
 	}
 `;
 

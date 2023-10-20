@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Link, MobileMeneWrapper, Navbar } from "./styles";
+import { Link, MobileMeneWrapper, Navbar, NavbarWrapper } from "./styles";
 import { useContext, useState } from "react";
 import { NavigationContext } from "context";
 import { useScrollTo } from "hooks/useScrollTo";
@@ -19,47 +19,52 @@ const Navigation = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const { activeSection } = useContext(NavigationContext);
   const { scrollToSection } = useScrollTo();
-  const { isTabletWidth } = useResolution();
+  const { isSmallDesktopWidth } = useResolution();
 
   const handleOpenMenu = () => setIsOpenMenu(!isOpenMenu);
   return (
-    <Navbar>
-      <Logo size={"small"} type={"dark"} />
-      {isTabletWidth && (
-        <div>
-          {navLinks.map(({ title, id, path }, idx) => (
-            <Link
-              key={idx}
-              onClick={() => scrollToSection(id)}
-              className={`${activeSection === id ? "active" : ""}`}
-            >
-              {title}
-            </Link>
-          ))}
+    <NavbarWrapper>
+      <Navbar>
+        <Logo size={"small"} type={"dark"} />
+        {isSmallDesktopWidth && (
+          <div>
+            {navLinks.map(({ title, id, path }, idx) => (
+              <Link
+                key={idx}
+                onClick={() => scrollToSection(id)}
+                className={`${activeSection === id ? "active" : ""}`}
+              >
+                {title}
+              </Link>
+            ))}
+          </div>
+        )}
+        <div style={{ width: "140px" }}>
+          <Button color={"black"} onClick={handleOpenMenu}>
+            <a href="tel:6177787312">Zadzwoń</a>
+          </Button>
         </div>
-      )}
-      <Button color={"black"} onClick={handleOpenMenu}>
-        <a href="tel:6177787312">Zadzwoń</a>
-      </Button>
-      {!isTabletWidth && (
-        <Button color={"black"} size="small" handleClick={handleOpenMenu}>
-          <img src={hamburger} width={"16px"} />
-        </Button>
-      )}
-      {isOpenMenu && (
-        <MobileMeneWrapper>
-          {navLinks.map(({ title, id, path }, idx) => (
-            <Link
-              key={idx}
-              onClick={() => scrollToSection(id)}
-              className={`${activeSection === id ? "active" : ""}`}
-            >
-              {title}
-            </Link>
-          ))}
-        </MobileMeneWrapper>
-      )}
-    </Navbar>
+
+        {!isSmallDesktopWidth && (
+          <Button color={"black"} size="small" handleClick={handleOpenMenu}>
+            <img src={hamburger} width={"16px"} />
+          </Button>
+        )}
+        {isOpenMenu && (
+          <MobileMeneWrapper>
+            {navLinks.map(({ title, id, path }, idx) => (
+              <Link
+                key={idx}
+                onClick={() => scrollToSection(id)}
+                className={`${activeSection === id ? "active" : ""}`}
+              >
+                {title}
+              </Link>
+            ))}
+          </MobileMeneWrapper>
+        )}
+      </Navbar>
+    </NavbarWrapper>
   );
 };
 

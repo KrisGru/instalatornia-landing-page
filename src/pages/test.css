@@ -31,24 +31,8 @@
   }
 }
 
-.navbar {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  /* background: rgba(255, 255, 255, 0.2); */
-}
-
 .title {
   position: relative;
-}
-
-.title::before {
-  content: url("./../assets/roof.svg");
-  top: -60px;
-  left: -40px;
-  position: absolute;
 }
 
 /* .title::after {
@@ -57,16 +41,3 @@
 	right: 40px;
 	position: absolute;
 } */
-
-#title123 {
-  color: red;
-  transform: translateX(100px);
-  opacity: 0;
-  transition: 1s;
-}
-
-#title123.animation {
-  color: green;
-  transform: translateX(0);
-  opacity: 1;
-}

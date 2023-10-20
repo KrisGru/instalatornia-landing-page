@@ -6,7 +6,7 @@ export const Section = styled.section`
 	min-height: 100vh;
 
 	min-height: ${ ({height}) => {
-		if (height==='noFullHeight') return '0;'
+		if (height==='noFullHeight') return 'auto;'
 		else return '100vh;'
 	}}
 

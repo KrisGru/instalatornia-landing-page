@@ -3,12 +3,11 @@
     "editor.insertSpaces": false,
 	"editor.tabSize": 4,
 	"[javascript]": {
-	  "editor.tabSize": 4
+		"prettier.tabWidth": 4,
 	},
 	"[json]": {
 	  "editor.tabSize": 2
 	},
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
-	"editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
 }

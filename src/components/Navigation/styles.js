@@ -12,7 +12,7 @@ export const Link = styled.a`
 		content: "";
 		position: absolute;
 		width: 100%;
-		height: 2px;
+		height: 3px;
 		border-radius: 4px;
 		background-color: green;
 		bottom: 0;
@@ -32,7 +32,7 @@ export const Link = styled.a`
 			content: "";
 			position: absolute;
 			width: 100%;
-			height: 2px;
+			height: 3px;
 			border-radius: 4px;
 			background-color: green;
 			bottom: 0;
@@ -44,25 +44,23 @@ export const Link = styled.a`
 	}
 `;
 
+export const NavbarWrapper = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+    top: 0;
+`
+
 export const Navbar = styled.div`
-	position: relative;
 	max-width: 1480px;
 	width: 100%;
-	height: 80px;
+	height: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 10px;
 	padding-right: 10px;
-
-	@media (min-width: 600px) {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	@media (min-width: 768px) {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
 `;
 
 export const MobileMeneWrapper = styled.div`

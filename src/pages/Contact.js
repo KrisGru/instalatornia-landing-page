@@ -3,60 +3,88 @@ import Header from "../components/Header";
 import SocialMedia from "../components/SocialMedia";
 import { Container, Section } from "./styles/styles";
 import { NavigationContext } from "context";
+import logo from "../assets/logo.png";
+
 import { useOnScreen } from "hooks/useOnScreen";
+import { Flex, Text } from "styles";
+import Button from "components/Button";
 
 const Contact = () => {
-	const contactRef = useRef(null);
-	const { isVisible } = useOnScreen(contactRef);
+  const contactRef = useRef(null);
+  const { isVisible } = useOnScreen(contactRef);
 
-	return (
-		<Section ref={contactRef} id='contact_section'>
-			<Container>
-				{/* <SocialMedia className='socialMedia-contact' />
-				<Header section='contact' text={"KONTAKT"} />
-				<div className='contactContent'>
-					<div>
-						<h1>Arkadiusz Gruszczyński</h1>
-						<ul>
-							<li>ikona 352 636 234</li>
-							<li>mail kontakt@instaslatornia.pl</li>
-						</ul>
-					</div>
-					<form
-						className='contact-form'
-						action='/wyslij_wiadomosc'
-						method='post'>
-						<label htmlFor='imie'>Imię:</label>
-						<input type='text' id='imie' name='imie' required />
-						<br />
+  return (
+    <Section ref={contactRef} id="contact_section">
+      <Container>
+        <Header
+          colorText="black"
+          section="contact"
+          text={"KAŻDE ZLECENIE TRAKTUJEMY PRIORYTETOWO"}
+        />
+        <Flex
+          justifyContent="space-around"
+          alignItems
+          style={{ padding: "50px 0" }}
+        >
+          <div>
+            <img src={logo} alt="Logo" width="300px" />
+            <Text color="black">ARKADIUSZ GRUSZCZYŃSKI</Text>
+            <Text color="black"></Text>
+            <Text color="black"></Text>
+            <Text color="black">Kowala 12A/2, 26-052 Bilcza</Text>
+            <Flex>
+              <Text color="black" style={{ marginRight: "10px" }}>
+                tel. 363 357 141
+              </Text>
+              <Button size="sm" href="215124531">
+                Zadzwoń
+              </Button>
+            </Flex>
+            <Text color="black">
+              mail
+              <a href="mailto:assfa@as.ca">assfa@as.ca</a>
+            </Text>
 
-						<label htmlFor='email'>Adres e-mail:</label>
-						<input type='email' id='email' name='email' required />
-						<br />
+            <SocialMedia />
+          </div>
 
-						<label htmlFor='temat'>Temat:</label>
-						<input type='text' id='temat' name='temat' required />
-						<br />
+          <form
+            action="https://formsubmit.co/krz1998gru@gmail.com"
+            method="POST"
+            style={{ width: "300px" }}
+          >
+            <label htmlFor="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required />
+            <br />
 
-						<label htmlFor='wiadomosc'>Wiadomość:</label>
-						<br />
-						<textarea
-							id='wiadomosc'
-							name='wiadomosc'
-							rows='5'
-							required></textarea>
-						<br />
+            <label htmlFor="email">Adres e-mail:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
 
-						<input type='submit' value='Wyślij' />
-					</form>
-				</div>
-				<div id='footer'>
-					Copyright by ©Instalaornia Arkadiusz GruszczyńskiSgdas adfds
-					lore,m ipsum. ©Instalaornia
-				</div> */}
-			</Container>
-		</Section>
-	);
+            <label htmlFor="temat">Temat:</label>
+            <input type="text" id="temat" name="temat" required />
+            <br />
+
+            <label htmlFor="wiadomosc">Wiadomość:</label>
+            <br />
+            <textarea
+              id="wiadomosc"
+              name="wiadomosc"
+              rows="5"
+              required
+            ></textarea>
+            <br />
+
+            <Button type="submit">Wyślij</Button>
+          </form>
+        </Flex>
+
+        {/* <div id="footer">
+          <img src="../assets/electrician-hand.png" />
+        </div> */}
+      </Container>
+    </Section>
+  );
 };
 
 export default Contact;

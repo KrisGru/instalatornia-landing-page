@@ -1,10 +1,22 @@
 /* dorzuć to potem do section */
-#homeBackground {
-	background-image: url("../../assets/home_background.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 #price_section {
-	background-color: #1c1c1c;
+  /* background-color: #1c1c1c; */
+  color: black;
+}
+
+#contact_section {
+  position: relative;
+}
+#contact_section::after {
+  content: url("../../assets/electrician-hand-1.jpg");
+  position: absolute;
+  bottom: 0;
+}
+
+#home_section {
+  background-image: url("../../assets/b-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 85vh;
 }

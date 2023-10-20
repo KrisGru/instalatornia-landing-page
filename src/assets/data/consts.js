@@ -127,11 +127,7 @@ export const realizationCategories = [
 ];
 
 export const aboutCompany = [
-	{
-		id: 1,
-		imgSrc: "../assets/idea.png",
-		description: "Do każdego zlecenia podchodzimy indywidualnie",
-	},
+
 	{
 		id: 2,
 		imgSrc: "../assets/idea.png",

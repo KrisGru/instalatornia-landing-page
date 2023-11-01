@@ -1,7 +1,7 @@
 import { NavigationContext } from "context";
 import { useState, useEffect, useContext } from "react";
 
-export const useOnScreen = (ref, threshold = "0.55") => {
+export const useOnScreen = (ref, rootMargin = "55%") => {
 	const [isVisible, setIsVisible] = useState(false);
 	const { setActiveSection, activeSection } = useContext(NavigationContext);
 	useEffect(() => {
@@ -13,7 +13,7 @@ export const useOnScreen = (ref, threshold = "0.55") => {
 				}
 			},
 			{
-				threshold,
+				rootMargin,
 			}
 		);
 

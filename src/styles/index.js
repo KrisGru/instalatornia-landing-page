@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Flex = styled.div`
-  height: 100%;
+//   height: 100%;
   display: flex;
 
   flex-direction: ${({ direction }) => {
@@ -21,15 +21,21 @@ export const Flex = styled.div`
     else if (alignItems === "end") return "end";
     else return "center";
   }};
+
+  gap: ${({ gap }) => {
+    return gap;
+  }};
 `;
 
 export const Text = styled.p`
+  position: relative;
   font-weight: 100;
   letter-spacing: 2px;
-  text-align: center;
+//   text-align: center;
 
   color: ${({ color }) => {
     if (color === "black") return "#000000";
+	else if (color==='gray') return "#5f5f5f";
     else return `#ffffff`;
   }};
 
@@ -41,10 +47,10 @@ export const Text = styled.p`
   }};
 
   padding: ${({ size }) => {
-    if (size === "h1") return "50px 0";
-    else if (size === "h2") return "40px 0";
+    if (size === "h1") return "40px 0";
+    else if (size === "h2") return "30px 0";
     else if (size === "h3") return "20px 0";
-    else return "10px 0";
+    else return "5px 0";
   }};
 
   letter-spacing: ${({ size }) => {

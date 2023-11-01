@@ -19,8 +19,8 @@ export const Section = styled.section`
 export const Container = styled.div`
 	max-width: 1080px;
 	width: 100%;
-	padding-top:${({padding}) => padding==='noPadding' ? 0 : padding==='bigPadding' ? '220px' : '96px'};
-	padding-bottom: ${({padding}) => padding==='noPadding' ? 0 : padding==='bigPadding' ? '220px' : '96px'};
+	padding-top:${({padding}) => padding==='noPadding' ? '30px' : padding==='bigPadding' ? '220px' : '96px'};
+	padding-bottom: ${({padding}) => padding==='noPadding' ? '30px' : padding==='bigPadding' ? '220px' : '96px'};
 	padding-left: 10px;
 	padding-right: 10px;
 

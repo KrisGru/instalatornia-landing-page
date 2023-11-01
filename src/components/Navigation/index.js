@@ -10,8 +10,8 @@ import { useResolution } from "hooks/useResolution";
 
 const navLinks = [
   { title: "Strona Główna", id: "home_section", path: "#" },
-  //   { title: "O nas", id: "about_section", path: "o_nas" },
   { title: "Usługi", id: "price_section", path: "cennik" },
+    { title: "O nas", id: "about_section", path: "o_nas" },
   { title: "Kontakt", id: "contact_section", path: "kontakt" },
 ];
 

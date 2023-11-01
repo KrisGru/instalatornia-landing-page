@@ -2,10 +2,12 @@ import PropTypes from "prop-types";
 
 const TableRow = ({ name, price }) => {
   return (
-    <li className="service-item">
-      <p className="serviceName">{name}</p>
-      <p className="servicePrice">{price}</p>
-    </li>
+	<>
+	   <li className="service-item">
+			<p className="serviceName">{name}</p>
+			<p className="servicePrice">{price}</p>
+		</li>
+	</>
   );
 };
 

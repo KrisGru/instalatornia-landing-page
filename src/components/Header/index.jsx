@@ -6,13 +6,13 @@ import { Flex, Text } from "styles";
 
 const Header = ({ section, text, colorText, isSpan, text2 }) => {
   return (
-    <HeaderWrapper className="header">
+    <HeaderWrapper >
       {section === "price" && (
         <>
-          <img src={logo} alt="Logo" width="350px" />
-          <Text size="h2" color="black">
-            OFERTA USŁUG <span style={{ color: "#d3d600" }}>ELEKTRYCZNYCH</span>
-          </Text>
+          {/* <img src={logo} alt="Logo" width="350px" /> */}
+		  <HeaderText size="h2" color="black">
+		  	Oferta usług <span style={{ color: "#008000" }}>elektrycznych</span>
+		  </HeaderText>
         </>
       )}
       {section === "about" && <FacebookIcon height="70px" />}

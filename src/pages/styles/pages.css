@@ -1,9 +1,10 @@
 /* dorzuć to potem do section */
 #home_section {
-  background-image: url("../../assets/b-home.png");
+  /* background-image: url("../../assets/b-home.png"); */
+  background-image: url("../../assets/b-home2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 85vh;
+  /* min-height: 85vh; */
 }
 
 #price_section {
@@ -15,7 +16,7 @@
   position: relative;
 }
 #contact_section::after {
-  content: url("../../assets/electrician-hand-1.jpg");
+  content: url("../../assets/electrician-hand.png");
   position: absolute;
   bottom: 0;
 }

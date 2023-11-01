@@ -3,7 +3,9 @@ import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
 import "./pages/test.css";
 
+
 function App() {
+
 	return (
 		<NavigationContextProvider>
 			<div id='hide_nav' className='navbar'>
@@ -11,8 +13,8 @@ function App() {
 			</div>
 			<div className='appContainer'>
 				<Home />
-				<About />
 				<Price />
+				<About />
 				<Contact />
 			</div>
 		</NavigationContextProvider>

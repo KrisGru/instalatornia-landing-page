@@ -13,11 +13,11 @@ import { HeaderText } from "components/Header/styles";
 
 const About = () => {
   const aboutRef = useRef(null);
-  const { isVisible } = useOnScreen(aboutRef);
+  const { isVisible } = useOnScreen(aboutRef,'0.9');
 
   return (
     <>
-	<Section ref={aboutRef} id="about_section" relative height={"noFullHeight"}>
+	<Section ref={aboutRef} id="about_section" relative='true' height={"noFullHeight"}>
       <Container >
 	  	<HeaderText size="h2" color="black">
 			O nas

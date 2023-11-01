@@ -9,16 +9,16 @@ export const Flex = styled.div`
     else return "row";
   }};
 
-  justify-content: ${({ justifyContent }) => {
-    if (justifyContent === "space-around") return "space-around";
-    else if (justifyContent === "space-between") return "space-between";
-    else if (justifyContent === "start") return "start";
+  justify-content: ${({ justify_content }) => {
+    if (justify_content === "space-around") return "space-around";
+    else if (justify_content === "space-between") return "space-between";
+    else if (justify_content === "start") return "start";
     else return "center";
   }};
 
-  align-items: ${({ alignItems }) => {
-    if (alignItems === "start") return "start";
-    else if (alignItems === "end") return "end";
+  align-items: ${({ alignitems }) => {
+    if (alignitems === "start") return "start";
+    else if (alignitems === "end") return "end";
     else return "center";
   }};
 

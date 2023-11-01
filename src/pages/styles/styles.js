@@ -11,7 +11,7 @@ export const Section = styled.section`
 	}}
 
 	position: ${ ({relative}) => {
-		if (relative) return 'relative'
+		if (relative=='true') return 'relative'
 	}}
 
 `;

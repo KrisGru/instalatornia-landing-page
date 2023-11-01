@@ -7,6 +7,7 @@ export const Link = styled.a`
 	background: transparent;
 	position: relative;
 	text-decoration: none;
+	color: #d5d5d5;
 
 	&::before {
 		content: "";

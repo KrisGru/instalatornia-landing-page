@@ -10,8 +10,8 @@ import { useResolution } from "hooks/useResolution";
 
 const navLinks = [
   { title: "Strona Główna", id: "home_section", path: "#" },
-  { title: "Usługi", id: "price_section", path: "cennik" },
-    { title: "O nas", id: "about_section", path: "o_nas" },
+  { title: "Usługi", id: "service_section", path: "cennik" },
+  { title: "O nas", id: "about_section", path: "o_nas" },
   { title: "Kontakt", id: "contact_section", path: "kontakt" },
 ];
 
@@ -25,11 +25,12 @@ const Navigation = () => {
   return (
     <NavbarWrapper>
       <Navbar>
-        <Logo size={"small"} type={"dark"} />
+        <Logo size={"small"} type={"light"} />
         {isSmallDesktopWidth && (
           <div>
             {navLinks.map(({ title, id, path }, idx) => (
               <Link
+			  	href={`#${path}`}
                 key={idx}
                 onClick={() => scrollToSection(id)}
                 className={`${activeSection === id ? "active" : ""}`}
@@ -39,7 +40,7 @@ const Navigation = () => {
             ))}
           </div>
         )}
-        <div style={{ width: "140px" }}>
+        <div style={{ width: "140px", textAlign:isSmallDesktopWidth ? 'end' : 'center' }}>
           <Button color={"black"} onClick={handleOpenMenu}>
             <a href="tel:6177787312">Zadzwoń</a>
           </Button>

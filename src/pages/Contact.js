@@ -25,7 +25,7 @@ const Contact = () => {
 	<>
 		<Section height="noFullHeight" style={{backgroundColor: '#f5fff0'}}>
 			<Container padding='noPadding'>
-				<Flex justifyContent='space-around'>
+				<Flex justify_content='space-around'>
 					<Flex direction='column'>
 						<FontAwesomeIcon icon="fa-solid fa-check" style={{color: "#008000",}} size = '4x' />
 						<h1 style={{padding: '15px 0 0'}}>
@@ -52,8 +52,8 @@ const Contact = () => {
 				</HeaderText>
 				Zapraszamy do telefonicznego kontaktu z nami. Jest to najszybsza metoda uzyskania wstępnej wyceny oraz zamówienia wizyty specjalisty elektryka w przypadku wystąpienia nagłej awarii…
 				<Flex
-					justifyContent="space-around"
-					alignItems
+					justify_content="space-around"
+					alignitems='center'
 					style={{ padding: "50px 0" }}
 				>
 				<div>
@@ -113,8 +113,8 @@ const Contact = () => {
 				</div> */}
 			</Container>
 		</Section>
-		<Flex style={{backgroundColor: '#0e3f02', textAlign: 'center', padding: '0 50px'}} justifyContent='space-between'>
-			<Text>Instalatornia Arkadiusz Gruszczyński</Text>
+		<Flex style={{backgroundColor: '#0e3f02', textAlign: 'center', padding: '0 50px'}} justify_content='space-between'>
+			<Text>Instalatornia Arkadiusz Gruszczyński. All rights reserved.</Text>
 			<Text>Website by © Krzysztof Gruszczyński - 2023</Text>
 		</Flex>
 	</>

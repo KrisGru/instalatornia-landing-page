@@ -1,4 +1,4 @@
-import { Home, Price, About, Contact } from "./pages";
+import { Home, Price, About, Contact, Gallery } from "./pages";
 import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
 import "./pages/test.css";
@@ -15,6 +15,7 @@ function App() {
 				<Home />
 				<Price />
 				<About />
+				<Gallery />
 				<Contact />
 			</div>
 		</NavigationContextProvider>

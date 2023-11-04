@@ -10,6 +10,9 @@ import Header from "components/Header";
 import { useOnScreen } from "hooks/useOnScreen";
 import { NavigationContext } from "context";
 import { HeaderText } from "components/Header/styles";
+import { Flex } from "styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CountUp from "react-countup";
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -60,6 +63,28 @@ const About = () => {
         </div> */}
       </Container>
     </Section>
+	<Section height="noFullHeight" style={{backgroundColor: '#f5fff0'}}>
+			<Container padding='noPadding'>
+				<Flex justify_content='space-around'>
+					<Flex direction='column'>
+						<FontAwesomeIcon icon="fa-solid fa-check" style={{color: "#008000",}} size = '4x' />
+						<h1 style={{padding: '15px 0 0'}}>
+							<CountUp duration={1} end={1500} redraw={true} />+</h1>
+						<p style={{color:'#5f5f5f'}} >Wykonanych usług</p>
+					</Flex>
+					<Flex direction='column'>
+						<FontAwesomeIcon icon="fa-solid fa-clock-rotate-left" style={{color: "#008000",}} size = '4x'  />
+						<h1 style={{padding: '15px 0 0'}}><CountUp duration={2} end={10} redraw={true} /></h1>
+						<p style={{color:'#5f5f5f'}} >Lat doświadczenia</p>
+					</Flex>
+					<Flex direction='column'>
+						<FontAwesomeIcon icon="fa-solid fa-comments" style={{color: "#008000",}} size = '4x'  />
+						<h1 style={{padding: '15px 0 0'}}><CountUp duration={1} end={900} redraw={true}/>+</h1>
+						<p style={{color:'#5f5f5f'}} >Rekomendacji klientów</p>
+					</Flex>
+				</Flex>
+			</Container>
+		</Section>
 	</>
   );
 };

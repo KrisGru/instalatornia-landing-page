@@ -1,20 +1,12 @@
-import React, { useContext, useRef } from "react";
-import Header from "../components/Header";
+import React, { useRef } from "react";
 import SocialMedia from "../components/SocialMedia";
 import { Container, Section } from "./styles/styles";
-import { NavigationContext } from "context";
 import logo from "../assets/logo.png";
 
 import { useOnScreen } from "hooks/useOnScreen";
 import { Flex, Text } from "styles";
 import Button from "components/Button";
 
-// import { Container, Section } from "pages/styles/styles";
-// import { Flex, Text } from "styles";
-import CountUp from "react-countup";
-import CountUpBox from "components/CountUpBox";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { HeaderText } from "components/Header/styles";
 
 const Contact = () => {
@@ -23,28 +15,7 @@ const Contact = () => {
 
   return (
 	<>
-		<Section height="noFullHeight" style={{backgroundColor: '#f5fff0'}}>
-			<Container padding='noPadding'>
-				<Flex justify_content='space-around'>
-					<Flex direction='column'>
-						<FontAwesomeIcon icon="fa-solid fa-check" style={{color: "#008000",}} size = '4x' />
-						<h1 style={{padding: '15px 0 0'}}>
-							<CountUp duration={1} end={1500} redraw={true} />+</h1>
-						<p style={{color:'#5f5f5f'}} >Wykonanych usług</p>
-					</Flex>
-					<Flex direction='column'>
-						<FontAwesomeIcon icon="fa-solid fa-clock-rotate-left" style={{color: "#008000",}} size = '4x'  />
-						<h1 style={{padding: '15px 0 0'}}><CountUp duration={2} end={10} redraw={true} /></h1>
-						<p style={{color:'#5f5f5f'}} >Lat doświadczenia</p>
-					</Flex>
-					<Flex direction='column'>
-						<FontAwesomeIcon icon="fa-solid fa-comments" style={{color: "#008000",}} size = '4x'  />
-						<h1 style={{padding: '15px 0 0'}}><CountUp duration={1} end={900} redraw={true}/>+</h1>
-						<p style={{color:'#5f5f5f'}} >Rekomendacji klientów</p>
-					</Flex>
-				</Flex>
-			</Container>
-		</Section>
+		
 		<Section ref={contactRef} id="contact_section" height='noFullHeight' >
 			<Container  padding='noPadding'>
 				<HeaderText size="h2" color="black">

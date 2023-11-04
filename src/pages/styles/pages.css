@@ -1,12 +1,4 @@
 /* dorzuć to potem do section */
-#home_section {
-  /* background-image: url("../../assets/b-home.png"); */
-  background-image: url("../../assets/b-home2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* min-height: 85vh; */
-}
-
 #service_section {
   /* background-color: #1c1c1c; */
   color: black;

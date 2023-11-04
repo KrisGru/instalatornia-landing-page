@@ -14,7 +14,7 @@ export const HeaderText = styled(Text)`
 		height: 4px;
 		border-radius: 4px;
 		background-color: green;
-		bottom: 20px;
+		bottom: 0px;
 		left: -20px;
 		// transform-origin: right;
 		// transform: scaleX(0);

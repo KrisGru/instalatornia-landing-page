@@ -47,11 +47,11 @@ button {
   color: #ffffff;
 }
 
-#hide_nav {
+#hide_navigation {
   z-index: 10;
   color: #000000;
   position: fixed;
-  top: -280px;
+  top: -80px;
   height: 80px;
   width: 100%;
   transition: top .2s linear;

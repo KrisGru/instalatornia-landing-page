@@ -1,17 +1,16 @@
 import { Home, Price, About, Contact, Gallery } from "./pages";
 import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
-import "./pages/test.css";
-
+import { Container, Section } from "pages/styles/styles";
 
 function App() {
 
 	return (
 		<NavigationContextProvider>
-			<div id='hide_nav' className='navbar'>
-				<Navigation />
-			</div>
 			<div className='appContainer'>
+				<div id='hide_navigation'>
+					<Navigation />
+				</div>
 				<Home />
 				<Price />
 				<About />

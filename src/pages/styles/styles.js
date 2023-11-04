@@ -1,9 +1,11 @@
+import homeBackground from 'assets/b-home-min.jpg'
 import styled from "styled-components";
 
 export const Section = styled.section`
 	display: flex;
 	justify-content: center;
-	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	min-height: ${ ({height}) => {
 		if (height==='noFullHeight') return 'auto;'
@@ -11,9 +13,13 @@ export const Section = styled.section`
 	}}
 
 	position: ${ ({relative}) => {
-		if (relative=='true') return 'relative'
+		if (relative=='true') return 'relative;'
+		else return 'static;'
 	}}
 
+	background-image: ${ ({id}) => {
+		if (id=='home_section') return `url(${homeBackground});`
+	}} 
 `;
 
 export const Container = styled.div`

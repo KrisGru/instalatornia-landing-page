@@ -31,8 +31,6 @@ export const Flex = styled.div`
 export const Text = styled.p`
   position: relative;
   font-weight: 100;
-  letter-spacing: 2px;
-//   text-align: center;
 
   color: ${({ color }) => {
     if (color === "black") return "#000000";
@@ -41,23 +39,18 @@ export const Text = styled.p`
   }};
 
   font-size: ${({ size }) => {
-    if (size === "h1") return "48px";
-    else if (size === "h2") return "38px";
-    else if (size === "h3") return "26px";
+    if (size === "h1") return "3em";
+    else if (size === "h2") return "2em";
+    else if (size === "h3") return "1.15em";
     else return "16px";
   }};
 
-  padding: ${({ size }) => {
-    if (size === "h1") return "40px 0";
-    else if (size === "h2") return "30px 0";
-    else if (size === "h3") return "20px 0";
+  margin-block: ${({ size }) => {
+    if (size === "h1") return "0.67em";
+    else if (size === "h2") return "0.5em";
+    else if (size === "h3") return "0.4em";
     else return "5px 0";
   }};
 
-  letter-spacing: ${({ size }) => {
-    if (size === "h1") return "2px;";
-    else if (size === "h2") return "2px;";
-    else if (size === "h3") return "2px;";
-    else return "1px";
-  }};
+
 `;

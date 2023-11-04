@@ -4,10 +4,9 @@ import { Container, Section } from "./styles/styles";
 import logo from "../assets/logo.png";
 
 import { useOnScreen } from "hooks/useOnScreen";
-import { Flex, Text } from "styles";
+import { Flex, HeaderText, Text } from "styles";
 import Button from "components/Button";
 
-import { HeaderText } from "components/Header/styles";
 
 const Contact = () => {
   const contactRef = useRef(null);

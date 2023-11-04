@@ -19,7 +19,8 @@ export const Flex = styled.div`
   align-items: ${({ alignitems }) => {
     if (alignitems === "start") return "start";
     else if (alignitems === "end") return "end";
-    else return "center";
+    else if(alignitems == "stretch") return "stretch";
+    else if(alignitems == "center") return "center";
   }};
 
   gap: ${({ gap }) => {
@@ -51,6 +52,29 @@ export const Text = styled.p`
     else if (size === "h3") return "0.4em";
     else return "5px 0";
   }};
-
-
 `;
+
+export const HeaderText = styled(Text)`
+	&:before {
+		content: "";
+		position: absolute;
+		width: 20%;
+		height: 4px;
+		border-radius: 4px;
+		background-color: green;
+		bottom: -1px;
+		left: 0px;
+	}
+	
+	&:hover:before {
+		transform-origin: left;
+		transform: scaleX(1);
+	}
+
+	@media(min-width: 1180px) {
+		&:before {
+			left: -20px;
+		}
+	}
+`;
+

@@ -6,23 +6,3 @@ export const HeaderWrapper = styled.header`
 	// align-items: center;
 `;
 
-export const HeaderText = styled(Text)`
-	&:before {
-		content: "";
-		position: absolute;
-		width: 20%;
-		height: 4px;
-		border-radius: 4px;
-		background-color: green;
-		bottom: 0px;
-		left: -20px;
-		// transform-origin: right;
-		// transform: scaleX(0);
-		// transition: transform 0.3s ease-in-out;
-	}
-
-	&:hover:before {
-		transform-origin: left;
-		transform: scaleX(1);
-	}
-`;

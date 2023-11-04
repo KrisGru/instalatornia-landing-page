@@ -1,12 +1,8 @@
 /* dorzuć to potem do section */
-#service_section {
-  /* background-color: #1c1c1c; */
-  color: black;
-}
-
 #contact_section {
   position: relative;
 }
+
 #contact_section::after {
   content: url("../../assets/electrician-hand.png");
   position: absolute;

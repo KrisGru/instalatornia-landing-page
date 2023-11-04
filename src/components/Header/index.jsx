@@ -1,8 +1,8 @@
-import { HeaderWrapper, HeaderText } from "./styles";
+import { HeaderWrapper } from "./styles";
 import logo from "../../assets/logo.png";
 import { ReactComponent as FacebookIcon } from "../../assets/icons/instagram.svg";
 
-import { Flex, Text } from "styles";
+import { Flex, HeaderText, Text } from "styles";
 
 const Header = ({ section, text, colorText, isSpan, text2 }) => {
   return (

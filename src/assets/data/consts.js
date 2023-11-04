@@ -130,7 +130,7 @@ export const aboutCompany = [
 
 	{
 		id: 2,
-		imgSrc: "../assets/idea.png",
+		imgSrc: "../../../assets/logo.png",
 		description:
 			"Śledząc bieżące trendy doradzamy klientom tak, aby instalacja w ich mieszkaniu, domu lub firmie była komfortowa w użytkowaniu i co najważniejsze, była trwała",
 	},

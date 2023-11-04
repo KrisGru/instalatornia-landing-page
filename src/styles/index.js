@@ -23,7 +23,8 @@ export const Flex = styled.div`
   }};
 
   gap: ${({ gap }) => {
-    return gap;
+	if (gap === "small") return "10px";
+    else return gap;
   }};
 `;
 

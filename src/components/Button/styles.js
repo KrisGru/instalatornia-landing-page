@@ -1,79 +1,65 @@
 import { styled, keyframes } from "styled-components";
 
-// export const StyledButton = styled.button`
-//   display: flex;
-//   justify-content: 'space-between',
-//   align-ttems: 'center',
-//   font-size: 16px;
-//   padding: 13px 26px;
-//   border: 2px solid #EFEFEF;
-//   border-radius: 4px;
-//   letter-spacing: 0.5px;
-//   cursor: pointer;
+export const StyledButton = styled.button`
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.2em;
+	padding: 0.75em 1.5em;
+	color: #fff;
+	transition: 0.35s;
 
-//   background-color: ${({ background }) => {
-// 		if (background === "transparent") return "transparent";
-// 		else if (background === "white") return "#ffffff";
-// 		else return `#EFEFEF`;
-//   }};
+	&:hover,
+	&:focus { 
+		border-color: #008000;
+		color: #fff;
+		box-shadow: inset 7.5em 0 0 0 #008000;
+	}
+`;
 
-//   color: ${({ color }) => {
-// 		if (color === "black") return "#000";
-// 		else if (color === "white") return "#ffffff";
-// 		else return `#ffffff`;
-//   }};
+export const Link = styled.a`
+	cursor: pointer;
+	margin: 8px 20px;
+	padding: 7px 12px;
+	background: transparent;
+	position: relative;
+	text-decoration: none;
+	color: #d5d5d5;
 
-//   &:active{
-//       color: ${({ color }) => {
-// 			if (color === "black") return "#000";
-// 			else if (color === "white") return "#ffffff";
-// 			else return `#EFEFEF`;
-// 		}};
-//       transform: scale(0.95);
-//   }
-// }
-// `;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		border-radius: 4px;
+		background-color: green;
+		bottom: 0;
+		left: 0;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform 0.3s ease-in-out;
+	}
 
-// const ripple_effect = keyframes`
-//   0% {
-//     transform: scale(1);
-//     opacity: 1;
-//   }
-//   50% {
-//     transform: scale(10);
-//     opacity: 0.375;
-//   }
-//   100% {
-//     transform: scale(35);
-//     opacity: 0;
-//   }
-// `;
+	&:hover::before {
+		transform-origin: left;
+		transform: scaleX(1);
+	}
 
-// export const StyledButton = styled.button`
-// 	border-radius: 4px;
-// 	border: none;
-// 	margin: 8px;
-// 	padding: 14px 24px;
-// 	background: #1976d2;
-// 	color: #fff;
-// 	overflow: hidden;
-// 	position: relative;
-// 	cursor: pointer;
+	&.active {
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			border-radius: 4px;
+			background-color: green;
+			bottom: 0;
+			left: 0;
+			transform-origin: right;
+			transform: scaleX(1);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+`;
 
-// 	& > span.riple {
-// 		width: 20px;
-// 		height: 20px;
-// 		position: absolute;
-// 		background: #63a4ff;
-// 		display: block;
-// 		content: "";
-// 		border-radius: 9999px;
-// 		opacity: 1;
-// 		animation: 0.9s ease 1 forwards ripple_effect;
-// 	}
-
-// 	& > span.content {
-// 		position: relative;
-// 		z-index: 2;
-// 	}
-// `;

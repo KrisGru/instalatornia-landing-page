@@ -12,11 +12,11 @@ import { Text } from "styles";
 
 
 const About = () => {
-  const aboutRef = useRef(null);
-  const { isVisible } = useOnScreen(aboutRef);
+  const galleryRef = useRef(null);
+  const { isVisible } = useOnScreen(galleryRef);
 
   return (
-    <Section ref={aboutRef} id="about_section">
+    <Section ref={galleryRef} id="gallery_section">
       <Container>
 	  	<HeaderText size="h2" color="black">
 			Galeria

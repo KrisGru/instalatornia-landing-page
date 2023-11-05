@@ -1,18 +1,17 @@
 import { NavigationContext } from "context";
-import { useState, useEffect, useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 export const useOnScreen = (ref, threshold = "0.85") => {
 	const [isVisible, setIsVisible] = useState(false);
 	const { setActiveSection, activeSection } = useContext(NavigationContext);
-	
+
 	useEffect(() => {
-		const currentHash = window.location.hash
+		const currentHash = window.location.hash;
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				setIsVisible(entry.isIntersecting);
 				if (entry.isIntersecting) {
 					setActiveSection(ref.current.id);
-					
 				}
 			},
 			{

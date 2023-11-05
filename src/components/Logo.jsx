@@ -1,5 +1,5 @@
+import lightLogo from "assets/logo-white.png";
 import logo from "assets/logo.png";
-import lightLogo from 'assets/logo-white.png'
 
 const Logo = ({ type, size }) => {
 	return (
@@ -9,7 +9,7 @@ const Logo = ({ type, size }) => {
 					<img src={logo} alt='Logo' width='100%' />
 				</a>
 			)}
-			{type === "light" && size === "small" &&(
+			{type === "light" && size === "small" && (
 				<a href='#home-section' style={{ width: "140px" }}>
 					<img src={lightLogo} alt='Logo' width='100%' />
 				</a>

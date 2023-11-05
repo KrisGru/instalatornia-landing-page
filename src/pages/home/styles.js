@@ -10,4 +10,4 @@ export const AnimationText = styled(Text)`
 		transform: translateX(0);
 		opacity: 1;
 	}
-`
+`;

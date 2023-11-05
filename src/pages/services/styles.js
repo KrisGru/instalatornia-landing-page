@@ -4,7 +4,7 @@ export const IconImage = styled.img`
 	filter: invert(1);
 	padding-block: 15px;
 	max-width: 25%;
-`
+`;
 export const InfoWrapper = styled.div`
 	position: relative;
 	max-width: 48%;
@@ -24,7 +24,7 @@ export const InfoWrapper = styled.div`
 		transform: scaleX(0);
 		transition: transform 0.3s ease-in-out;
 	}
-	
+
 	&:hover:before {
 		transform-origin: left;
 		transform: scaleX(1);
@@ -33,4 +33,4 @@ export const InfoWrapper = styled.div`
 	@media (min-width: 768px) {
 		max-width: 23%;
 	}
-`
+`;

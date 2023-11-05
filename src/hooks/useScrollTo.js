@@ -1,5 +1,5 @@
 export const useScrollTo = () => {
-	const scrollToSection = (sectionId) => {
+	const scrollToSection = sectionId => {
 		document
 			.getElementById(sectionId)
 			.scrollIntoView({ behavior: "smooth" });

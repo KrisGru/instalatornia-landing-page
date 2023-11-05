@@ -5,8 +5,8 @@ export const NavbarWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	position: absolute;
-    top: 0;
-`
+	top: 0;
+`;
 
 export const Navbar = styled.div`
 	max-width: 1480px;
@@ -21,7 +21,6 @@ export const Navbar = styled.div`
 		padding-inline: 40px;
 	}
 `;
-
 
 export const MobileMeneWrapper = styled.div`
 	position: absolute;

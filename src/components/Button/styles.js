@@ -1,4 +1,4 @@
-import { styled, keyframes } from "styled-components";
+import { styled } from "styled-components";
 
 export const StyledButton = styled.button`
 	background: none;
@@ -11,7 +11,7 @@ export const StyledButton = styled.button`
 	transition: 0.35s;
 
 	&:hover,
-	&:focus { 
+	&:focus {
 		border-color: #008000;
 		color: #fff;
 		box-shadow: inset 7.5em 0 0 0 #008000;
@@ -62,4 +62,3 @@ export const Link = styled.a`
 		}
 	}
 `;
-

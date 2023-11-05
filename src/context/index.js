@@ -5,7 +5,7 @@ const NavigationContext = createContext();
 function NavigationContextProvider(props) {
 	const [activeSection, setActiveSection] = useState("");
 
-	const setActiveSectionHandler = (section) => {
+	const setActiveSectionHandler = section => {
 		setActiveSection(section);
 	};
 

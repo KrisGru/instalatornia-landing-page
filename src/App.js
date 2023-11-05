@@ -1,6 +1,6 @@
-import { Home, Services, About, Contact, Gallery } from "./pages";
-import { NavigationContextProvider } from "context";
 import Navigation from "components/Navigation";
+import { NavigationContextProvider } from "context";
+import { About, Contact, Gallery, Home, Services } from "./pages";
 
 function App() {
 	return (

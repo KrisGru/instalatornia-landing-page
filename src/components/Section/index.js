@@ -1,5 +1,5 @@
-import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { useRef } from "react";
 import "./styles.css";
 
 function SectionAnimate({ children }) {

@@ -1,4 +1,5 @@
 import homeBackground from "assets/image/b-home-min.jpg";
+import electrician_hand from "assets/image/electrician-hand.png";
 import styled from "styled-components";
 
 export const Flex = styled.div`
@@ -81,8 +82,6 @@ export const HeaderText = styled(Text)`
 export const Section = styled.section`
 	display: flex;
 	justify-content: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 
 	min-height: ${({ height }) => {
 		if (height === "noFullHeight") return "auto;";
@@ -94,28 +93,60 @@ export const Section = styled.section`
 		else return "static;";
 	}}
 
-	background-image: ${({ id }) => {
-		if (id == "home_section") return `url(${homeBackground});`;
-	}} 
+	&#home_section {
+		background-image: url(${homeBackground});
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+
+	&#contact_section {
+		background-image: url(${homeBackground});
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		// height: 100vh;
+
+		// &:before {
+		// 	content: url(${electrician_hand});
+		// 	position: absolute;
+		// 	bottom: 30px;
+    	// 	z-index: 0;
+		// }
+	}
+
+	&#internally_contact_section {
+		background-color: #e6e6e6;
+		width: 100%;
+
+		// &:before {
+		// 	content: url(${electrician_hand});
+		// 	position: absolute;
+		// 	bottom: 30px;
+    	// 	z-index: 0;
+		// }
+	}
+
+	
 `;
 
 export const Container = styled.div`
 	max-width: 1080px;
 	width: 100%;
-	padding-top: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
-	padding-bottom: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
-	padding-left: 10px;
-	padding-right: 10px;
+	// padding-top: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
+	// padding-bottom: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
+	padding-block: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
+	// padding-left: 10px;
+	// padding-right: 10px;
+	padding-inline: 10px;
 
-	position: ${({ absolute }) => {
-			if (absolute) return "absolute;";
-		}}
-		@media (min-width: 600px) {
-		padding-left: 15px;
-		padding-right: 15px;
+	position: ${({ absolute }) => absolute && "absolute"};
+
+	@media (min-width: 600px) {
+		padding-inline: 15px;
 	}
 	@media (min-width: 768px) {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-inline: 20px;
 	}
 `;

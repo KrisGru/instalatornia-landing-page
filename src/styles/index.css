@@ -20,29 +20,18 @@ a {
 	all: unset;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 *,
-html {
+html,
+body {
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
-}
-
-body {
-	margin: 0;
-	padding: 0;
+	box-sizing: border-box;
 	font-family: var(--primary-font, --secondary-font);
 }
 
 button {
 	font-family: var(--primary-font);
-}
-
-.text_white {
-	color: #ffffff;
 }
 
 #hide_navigation {
@@ -54,8 +43,6 @@ button {
 	width: 100%;
 	transition: top 0.2s linear;
 }
-
-/* homeContainer styles */
 
 .socialMedia-list {
 	display: flex;
@@ -108,11 +95,6 @@ button {
 	}
 }
 
-/* formularz wysyłki maila */
-/* .contact-form {
-	margin: 0 auto;
-} */
-
 label {
 	display: block;
 	margin-bottom: 5px;
@@ -126,6 +108,7 @@ textarea {
 	margin-bottom: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	background-color: #e6e6e6;
 }
 
 textarea {
@@ -143,10 +126,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background-color: #45a049;
-}
-
-#footer {
-	padding: var(--margin-sides);
-	width: 100%;
-	height: 100px;
 }

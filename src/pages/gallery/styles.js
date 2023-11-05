@@ -10,7 +10,7 @@ export const CarouselImage = styled.img`
 
 export const CarouselTitle = styled(Text)`
 	position: absolute;
-	top: -50px;
+	top: -10px;
 
 	left: ${({ left }) => {
 		if (left === "far") return "50%";

@@ -90,8 +90,13 @@ const About = () => {
 	const params = {
 		wrapAround: true,
 		cellAlign: "center",
-		cellSpacing: !isTabletWidth ? 0 : 2,
-		style: { margin: "80px 0" },
+		cellSpacing: 10,
+		style: {
+			margin: "40px 0",
+			backgroundColor: "rgb(245, 255, 240)",
+			padding: "40px 15px",
+			boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
+		},
 		slidesToShow: !isTabletWidth ? 1 : isSmallDesktopWidth ? 3 : 2,
 		renderTopCenterControls: ({ currentSlide, slideCount }) => (
 			<CarouselTitle as='h3' size='h3' color='black' left='far'>

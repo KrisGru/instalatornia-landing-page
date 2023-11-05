@@ -2,7 +2,7 @@ import {  Flex } from "styles";
 import Navigation from "components/Navigation";
 import {  useRef } from "react";
 import { useOnScreen } from "hooks/useOnScreen";
-import { Container, Section } from "../styles/styles";
+import { Container, Section } from "styles";
 import { AnimationText } from "./styles";
 
 const Home = () => {

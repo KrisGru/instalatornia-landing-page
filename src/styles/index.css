@@ -4,7 +4,6 @@
   --light-green: #34ff00b3;
   --grey: #333;
   --facebook-color: #1877f2;
-  --youtube-color: #d60000;
   --primary-yellow: #d3d600;
   /* font's */
   --primary-font: "Oswald", sans-serif;
@@ -76,9 +75,7 @@ button {
     fill: var(--facebook-color);
   }
 
-  .socialMedia-item.youtube {
-    fill: var(--youtube-color);
-  }
+
 }
 
 

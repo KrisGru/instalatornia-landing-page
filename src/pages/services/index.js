@@ -1,16 +1,15 @@
 import React, { useContext, useRef } from "react";
 import { aboutCompany, services } from "../../assets/data/consts";
-import { Container, Section } from "../styles/styles";
+import { Container, Section } from "styles";
 import { useOnScreen } from "hooks/useOnScreen";
-import idea from "assets/idea.png";
-import support1 from "assets/support1.png";
-import shield from "assets/shield.png";
-import support from "assets/support.png";
-import extensionCord from "assets/extension-cord.png";
+// import idea from "assets/servicesImage/idea.png";
+import support1 from "assets/image/servicesImage/support1.png";
+import shield from "assets/image/servicesImage/shield.png";
+import support from "assets/image/servicesImage/support.png";
+import extensionCord from "assets/image/servicesImage/extension-cord.png";
 import { Flex, Text, HeaderText } from "styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconImage, InfoWrapper } from "./styles";
-
 
 const Services = () => {
   const servicesRef = useRef(null);
@@ -39,7 +38,7 @@ const Services = () => {
 		</Section>
 		<Section height='noFullHeight' style={{backgroundColor: '#f5fff0'}}>
 			<Container style={{paddingTop: '0', paddingBottom:'0'}}>
-				<Flex gap='10px' alignItems='stretch' style={{flexWrap: 'wrap'}}>
+				<Flex gap='10px' alignitems='stretch' style={{flexWrap: 'wrap'}}>
 					{aboutCompany.map((info, index) => {
 						let imgSrc;
 						switch (info.id) {

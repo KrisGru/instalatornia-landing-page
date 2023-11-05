@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import SocialMedia from "../components/SocialMedia";
-import { Container, Section } from "./styles/styles";
-import logo from "../assets/logo.png";
+import SocialMedia from "components/SocialMedia";
+import { Container, Section } from "styles";
+import logo from "assets/logo.png";
 
 import { useOnScreen } from "hooks/useOnScreen";
 import { Flex, HeaderText, Text } from "styles";

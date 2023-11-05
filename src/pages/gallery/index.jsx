@@ -1,11 +1,10 @@
 import React, {useRef } from "react";
-import { Container, Section } from "../styles/styles";
-import Header from "components/Header";
+import { Container, Section } from "styles";
 import { useOnScreen } from "hooks/useOnScreen";
 import Carousel from "nuka-carousel"
-import rozdzielnia1 from 'assets/carouselImage/rozdzielnie/rozdzielnia1.jpg'
-import rozdzielnia2 from 'assets/carouselImage/rozdzielnie/rozdzielnia2.jpg'
-import rozdzielnia3 from 'assets/carouselImage/rozdzielnie/rozdzielnia3.jpg'
+import rozdzielnia1 from 'assets/image/rozdzielnie/rozdzielnia1.jpg'
+import rozdzielnia2 from 'assets/image/rozdzielnie/rozdzielnia2.jpg'
+import rozdzielnia3 from 'assets/image/rozdzielnie/rozdzielnia3.jpg'
 import { Text, HeaderText } from "styles";
 
 

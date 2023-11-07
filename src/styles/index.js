@@ -106,26 +106,15 @@ export const Section = styled.section`
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		// height: 100vh;
-
-		// &:before {
-		// 	content: url(${electrician_hand});
-		// 	position: absolute;
-		// 	bottom: 30px;
-    	// 	z-index: 0;
-		// }
 	}
 
 	&#internally_contact_section {
 		background-color: #e6e6e6;
 		width: 100%;
 
-		// &:before {
-		// 	content: url(${electrician_hand});
-		// 	position: absolute;
-		// 	bottom: 30px;
-    	// 	z-index: 0;
-		// }
+		@media (min-width: 768px) {
+			padding-inline: 40px;
+		}
 	}
 
 	
@@ -134,13 +123,8 @@ export const Section = styled.section`
 export const Container = styled.div`
 	max-width: 1080px;
 	width: 100%;
-	// padding-top: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
-	// padding-bottom: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
 	padding-block: ${({ padding }) => (padding === "noPadding" ? "30px" : padding === "bigPadding" ? "220px" : "96px")};
-	// padding-left: 10px;
-	// padding-right: 10px;
 	padding-inline: 10px;
-
 	position: ${({ absolute }) => absolute && "absolute"};
 
 	@media (min-width: 600px) {
@@ -148,5 +132,8 @@ export const Container = styled.div`
 	}
 	@media (min-width: 768px) {
 		padding-inline: 20px;
+	}
+	@media (min-width: 1180px) {
+		padding-inline: 30px;
 	}
 `;

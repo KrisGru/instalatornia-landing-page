@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -6,33 +6,28 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
 		<!-- testowa czcionka -->
 		<link
 			rel="preload"
 			as="style"
-			href="https://fonts.googleapis.com/css?family=Work%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;display=swap"
-		/>
+			href="https://fonts.googleapis.com/css?family=Work%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CWork%20Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;display=swap" />
 		<title>Instalatornia</title>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script>
 			let prevScrollpos = window.pageYOffset;
-			window.onscroll = function() {
+			window.onscroll = function () {
 				const currentScrollPos = window.pageYOffset;
-				if (prevScrollpos > currentScrollPos && window.pageYOffset != 0) {
+				if (window.pageYOffset != 0) {
 					document.getElementById("hide_navigation").style.top = "0";
-					document.getElementById("hide_navigation").style.background ="rgb(14 14 14 / 80%)";
+					document.getElementById("hide_navigation").style.background = "rgb(14 14 14 / 80%)";
 				} else {
 					document.getElementById("hide_navigation").style.top = "-80px";
 				}
 				prevScrollpos = currentScrollPos;
-			}
-
+			};
 		</script>
 	</body>
 </html>

@@ -18,7 +18,7 @@ export const StyledButton = styled.button`
 	&:focus {
 		border-color: #008000;
 		color: #fff;
-		box-shadow: inset 7.5em 0 0 0 #008000;
+		box-shadow: inset 9em 0 0 0 #008000;
 	}
 `;
 

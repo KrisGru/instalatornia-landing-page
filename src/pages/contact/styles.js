@@ -26,7 +26,11 @@ export const FormContainer = styled.form`
 	padding: 10px 40px 40px;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 	border-radius: 8px 8px 8px 8px;
-	width: 450px;
+	width: 350px;
+
+	@media (min-width: 600px) {
+		width: 450px;
+	}
 
 	@media (min-width: 1180px) {
 		position: absolute;
@@ -55,9 +59,14 @@ export const LogoWrapper = styled.div`
 		content: "";
 		position: absolute;
 		top: 0;
-		left: -5%;
-		width: 110%;
+		left: 0;
+		width: 100%;
 		border: 3px solid green;
 		border-radius: 4px;
+
+		@media (min-width: 600px) {
+			left: -5%;
+			width: 110%;
+		}
 	}
 `;

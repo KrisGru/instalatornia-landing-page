@@ -1,6 +1,5 @@
 import logo from "assets/logo.png";
 import Button from "components/Button";
-import SocialMedia from "components/SocialMedia";
 import { useOnScreen } from "hooks/useOnScreen";
 import { useRef } from "react";
 import { Container, Flex, HeaderText, Section, Text } from "styles";
@@ -44,7 +43,7 @@ const Contact = () => {
 
 									<Flex alignitems='center' gap='5px' direction='column'>
 										<Text size='h3' color='black'>
-											tel. +48 363 357 141
+											tel. +48 570 741 222
 										</Text>
 									</Flex>
 								</div>
@@ -96,8 +95,7 @@ const Contact = () => {
 							textAlign: "center",
 							padding: "0 50px",
 							width: "100%",
-							height: "40px",
-							zIndex: "2",
+							minHeight: "40px",
 						}}
 						justify_content='space-between'>
 						<Text>Instalatornia Arkadiusz Gruszczyński. All rights reserved.</Text>

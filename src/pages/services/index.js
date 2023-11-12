@@ -18,79 +18,40 @@ const Services = () => {
 			<Section height='noFullHeight'>
 				<Container>
 					<HeaderText as='h1' size='h2' color='black'>
-						Oferta usług{" "}
-						<span style={{ color: "#008000" }}>elektrycznych</span>
+						Oferta usług <span style={{ color: "#008000" }}>elektrycznych</span>
 					</HeaderText>
 					<Text color='black'>
-						W naszej firmie zajmujemy się montażem, konserwacją oraz
-						naprawą instalacji elektrycznych. Instalacje elektryczne
-						– montaż wewnętrznej instalacji elektrycznych obejmuje
-						całe okablowanie doprowadzające prąd elektryczny do
-						punktów świetlnych, gniazd wtykowych oraz odbiorników
-						energii elektrycznej podłączonych na stałe do danej
-						instalacji. Bardzo istotne jest przeprowadzanie
-						regularnych pomiarów elektrycznych instalacji i
-						urządzeń, aby mieć pewność że działają one poprawnie.
-						Oferujemy również usługi w zakresie konserwacji oraz
-						naprawy instalacji elektrycznych.
+						Zajmujemy się kompleksowym świadczeniem usług związanych z montażem i konserwacją instalacji oraz urządzeń
+						elektrycznych i teletechnicznych, takimi jak:
 					</Text>
 
 					<ul style={{ margin: "40px 20px 0" }}>
 						{services.map((service, index) => (
-							<Flex
-								justify_content='start'
-								alignitems='center'
-								gap='7px'
-								key={index}>
-								<FontAwesomeIcon
-									icon='fa-solid fa-check'
-									style={{ color: "#008000" }}
-									size='1x'
-								/>
+							<Flex justify_content='start' alignitems='center' gap='7px' key={index}>
+								<FontAwesomeIcon icon='fa-solid fa-check' style={{ color: "#008000" }} size='1x' />
 								<Text color='gray'>{service.name}</Text>
 							</Flex>
 						))}
 					</ul>
 				</Container>
 			</Section>
-			<Section
-				height='noFullHeight'
-				style={{ backgroundColor: "#f5fff0" }}>
+			<Section height='noFullHeight' style={{ backgroundColor: "#f5fff0" }}>
 				<Container style={{ paddingTop: "0", paddingBottom: "0" }}>
-					<Flex
-						gap='10px'
-						alignitems='stretch'
-						style={{ flexWrap: "wrap" }}>
+					<Flex gap='10px' alignitems='stretch' style={{ flexWrap: "wrap" }}>
 						{aboutCompany.map((info, index) => {
 							let imgSrc;
 							switch (info.id) {
 								case 3:
-									imgSrc = (
-										<IconImage
-											src={shield}
-											alt={info.id}></IconImage>
-									);
+									imgSrc = <IconImage src={shield} alt={info.id}></IconImage>;
 									break;
 								case 4:
-									imgSrc = (
-										<IconImage
-											src={support}
-											alt={info.id}></IconImage>
-									);
+									imgSrc = <IconImage src={support} alt={info.id}></IconImage>;
 									break;
 								case 5:
-									imgSrc = (
-										<IconImage
-											src={extensionCord}
-											alt={info.id}></IconImage>
-									);
+									imgSrc = <IconImage src={extensionCord} alt={info.id}></IconImage>;
 									break;
 								default:
-									imgSrc = (
-										<IconImage
-											src={support1}
-											alt={info.id}></IconImage>
-									);
+									imgSrc = <IconImage src={support1} alt={info.id}></IconImage>;
 							}
 
 							return (

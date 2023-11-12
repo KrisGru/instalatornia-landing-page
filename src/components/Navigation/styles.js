@@ -25,10 +25,10 @@ export const Navbar = styled.div`
 export const MobileMeneWrapper = styled.div`
 	position: absolute;
 	right: 10px;
-	top: 80px;
+	top: 90px;
 	display: flex;
 	flex-direction: column;
-	background: rgb(14 14 14 / 80%);
+	background: rgb(14 14 14 / 95%);
 
 	@media (min-width: 768px) {
 		right: 40px;

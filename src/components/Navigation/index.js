@@ -51,7 +51,7 @@ const Navigation = () => {
 							</a>
 						</Button>
 						<Button color={"black"} onClick={handleOpenMenu}>
-							<a href='tel:6177787312'>Zadzwoń</a>
+							<a href='tel:570741222'>Zadzwoń</a>
 						</Button>
 						<Button color={"black"} size='small' handleClick={handleOpenMenu}>
 							<img src={hamburger} width={"16px"} />
@@ -68,7 +68,7 @@ const Navigation = () => {
 						</div>
 						<div style={{ textAlign: "end" }}>
 							<Button color={"black"} onClick={handleOpenMenu}>
-								<a href='tel:6177787312'>Zadzwoń</a>
+								<a href='tel:570741222'>Zadzwoń</a>
 							</Button>
 						</div>
 					</Flex>

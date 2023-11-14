@@ -4,6 +4,7 @@ import { useOnScreen } from "hooks/useOnScreen";
 import { useRef } from "react";
 import { Container, Flex, HeaderText, Section, Text } from "styles";
 import { FormContainer, FormTopContainer, InternallySectionContent, LogoWrapper } from "./styles";
+import { ContactUs } from "components/Form";
 
 const Contact = () => {
 	const contactRef = useRef(null);
@@ -43,11 +44,13 @@ const Contact = () => {
 
 									<Flex alignitems='center' gap='5px' direction='column'>
 										<Text size='h3' color='black'>
-											tel. +48 570 741 222
+											<a href='tel:570741222' style={{ cursor: "pointer" }}>
+												tel. +48 570 741 222
+											</a>
 										</Text>
 									</Flex>
 								</div>
-								<FormTopContainer style={{ textAlign: "center" }}>
+								{/* <FormTopContainer style={{ textAlign: "center" }}>
 									<img src={logo} alt='Logo' width='200px' />
 								</FormTopContainer>
 
@@ -60,14 +63,7 @@ const Contact = () => {
 									<br />
 
 									<label htmlFor='phone'>Numer telefonu:</label>
-									<input
-										type='tel'
-										id='temat'
-										name='phone'
-										pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
-										placeholder='000 000 000'
-										required
-									/>
+									<input type='tel' id='temat' name='phone' pattern='[456789][0-9]{8}' placeholder='123456789' required />
 
 									<br />
 
@@ -83,7 +79,8 @@ const Contact = () => {
 											Wyślij formularz
 										</Button>
 									</Flex>
-								</FormContainer>
+								</FormContainer> */}
+								<ContactUs />
 							</InternallySectionContent>
 						</Container>
 					</Flex>
